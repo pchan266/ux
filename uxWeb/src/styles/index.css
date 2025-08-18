@@ -145,6 +145,19 @@ a {
     padding-right: 6px;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 14px;
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+  .mini-navbar-option {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 8px;
   }
 

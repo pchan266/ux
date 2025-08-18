@@ -23,13 +23,24 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 2000px) {
   .executive-row {
-    flex-direction: column;
     gap: 66.93px;
+    width: 80%;
     margin-bottom: 66.93px;
   }
 }
+
+@media (max-width: 1000px) {
+  .executive-row {
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 66.93px;
+  }
+}
+
+
+
 
 .member-border {
   padding: 3px; 

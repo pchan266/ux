@@ -72,9 +72,9 @@ function Team() {
     const director = teamData[selected].find((member) => member.role === "Director");
 
     return (
-        <div className="min-h-[1330px]"> 
+        <div className="pb-[10%]"> 
         <CustomCursor />
-            <section className="mb-[33px]" data-aos="fade-right">
+            <section className="mb-[33px] " data-aos="fade-right">
                 <h1 className="">Our Team</h1>
                 <p className="red-text">Meet the amazing people behind QUX</p>
                 <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
