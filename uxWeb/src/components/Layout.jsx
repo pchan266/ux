@@ -11,7 +11,7 @@ export default function Layout() {
       <ScrollToTop />
       <Navbar />
       <main >
-        <Outlet /> {/* This will render the current page */}
+        <Outlet /> 
       </main>
       <Footer />
     </div>

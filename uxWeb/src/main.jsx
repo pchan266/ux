@@ -7,6 +7,7 @@ import Hackathon from './pages/hackathon.jsx'
 import Layout from "./components/Layout.jsx";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import "./styles/index.css";
+import Sponsorship from './pages/sponsorship.jsx'
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,10 @@ const router = createBrowserRouter([
         path: '/hackathon', 
         element: <Hackathon /> 
       },
-
+      {
+        path: "/sponsorship",
+        element: <Sponsorship />
+      },
     ],
   },
 ]);
