@@ -134,23 +134,14 @@
 
 
 @media (max-width: 768px) {
-  .nav-links a{
-    display: flex;
-    font-size: 12px;
+  .navbar-home {
+    display: none !important;
   }
+}
 
-  .contact-btn {
-    font-size: 12px;
-    padding: 0.3rem 0.5rem;
-  }
-
-  .logo {
-    height: 30px;
-    width: 39px;
-  }
-
-  .nav-links {
-    gap: 0.5rem;
+@media (min-width: 769px) {
+  .navbar-home {
+    display: flex !important;
   }
 }
 

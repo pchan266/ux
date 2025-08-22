@@ -74,7 +74,6 @@
 }
 
 .member-card {
-
   background-color: white; /* or whatever card bg */
   border-radius: 18.85px;
   padding: 3px;
@@ -82,4 +81,3 @@
   width: 100%;
   box-sizing: border-box;
 }
-

@@ -209,3 +209,284 @@ a {
   background: #b30000; 
 }
 */
+
+
+/* Mobile Navbar */
+
+@font-face {
+  font-family: "BR Firma";
+  src: url("../styles/br-firma/BR Firma Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mobile-navbar {
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default on desktop */
+}
+
+.mobile-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  max-width: 100%;
+}
+
+.mobile-logo {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-ux-logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+/* Make hamburger button invisible but keep animation when menu is open */
+.hamburger-menu.active {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger Animation */
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+}
+
+.mobile-menu-overlay.active .mobile-menu-content {
+  transform: translateX(0);
+}
+
+/* Mobile Menu Header */
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu-logo {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-ux-logo {
+  height: 35px;
+  width: auto;
+}
+
+.mobile-menu-close {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-line {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  transform-origin: center;
+}
+
+.close-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.close-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+/* Mobile Navigation Links */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.mobile-nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "BR Firma", sans-serif;
+  font-weight: 400;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-links a:hover {
+  background: linear-gradient(to right, #A3280C, #657F95);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom-color: #A3280C;
+}
+
+/* Mobile Contact Section */
+.mobile-contact-section {
+  margin-top: auto;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.mobile-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
+  background-clip: border-box;
+  color: white;
+  font-family: "BR Firma", sans-serif;
+  transition: background 0.3s ease;
+}
+
+.mobile-contact-btn:hover {
+  background: #00022B;
+}
+
+/* Show mobile navbar on mobile devices */
+@media (max-width: 768px) {
+  .mobile-navbar {
+    display: block !important;
+  }
+}
+
+/* Hide mobile navbar on desktop */
+@media (min-width: 769px) {
+  .mobile-navbar {
+    display: none !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .mobile-navbar-container {
+    padding: 0.75rem 1rem;
+  }
+  
+  .mobile-ux-logo {
+    height: 35px;
+  }
+  
+  .mobile-menu-content {
+    width: 85%;
+    padding: 1.5rem 1rem;
+  }
+  
+  .mobile-nav-links a {
+    font-size: 1.1rem;
+  }
+  
+  .mobile-contact-btn {
+    font-size: 1rem;
+    padding: 0.875rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .mobile-ux-logo {
+    height: 30px;
+  }
+  
+  .mobile-menu-ux-logo {
+    height: 30px;
+  }
+  
+  .mobile-nav-links a {
+    font-size: 1rem;
+  }
+}

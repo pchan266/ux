@@ -1,17 +1,28 @@
 html, body {
     cursor: none; /* hide default cursor */
   }
+
+/* Restore default cursor and hide custom cursor on mobile devices */
+@media (max-width: 768px) {
+  html, body {
+    cursor: auto; /* restore default cursor on mobile */
+  }
   
   .custom-cursor {
-    position: fixed;
-    pointer-events: none; /* so it doesn't block clicks */
-    z-index: 9999;
-    transform: translate(-2px, -2px); /* offset to align tip */
+    display: none; /* hide custom cursor on mobile */
   }
-  
-  .custom-cursor img {
-    width: 20px; /* shrink your SVG */
-    height: auto;
-    display: block;
-  }
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none; /* so it doesn't block clicks */
+  z-index: 9999;
+  transform: translate(-2px, -2px); /* offset to align tip */
+}
+
+.custom-cursor img {
+  width: 20px; /* shrink your SVG */
+  height: auto;
+  display: block;
+}
   
