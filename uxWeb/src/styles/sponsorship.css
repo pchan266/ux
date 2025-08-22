@@ -36,10 +36,6 @@
     font-size: 18px;
 }
 
-.why-sponsor {
-    background-color: white;
-}
-
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -49,14 +45,10 @@
 }
 
 .benefit-card {
-    background: white;
-    border-radius: 16px;
-    padding: 40px 24px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    border: 3px solid;
-    transition: transform 0.3s ease;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  border-radius: 12px;
 }
 
 .benefit-card:hover {
@@ -64,39 +56,74 @@
 }
 
 .benefit-card.boost {
-    border-color: #e74c3c;
+  position: relative;
+  background: white; 
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.benefit-card.boost::before{
+      content: "";
+  position: absolute;
+  inset: 0;
+  padding: 6px; 
+  border-radius: 16px; 
+  background: linear-gradient(to right, #A3280C, #657F95);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
 }
 
 .benefit-card.impact {
-    border-color: #f39c12;
+    position: relative;
+  background: white; /* card bg */
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
 }
+.benefit-card.impact::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 6px; /* border thickness */
+  border-radius: 16px; /* same as card */
+  background: linear-gradient(to right, #FCC560, #A0CBAD);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
 
 .benefit-card.connections {
-    border-color: #e74c3c;
+      position: relative;
+  background: white; /* card bg */
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
 }
 
-.benefit-icon {
-    margin-bottom: 24px;
-    display: flex;
-    justify-content: center;
+.benefit-card.connections::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 6px; /* border thickness */
+  border-radius: 16px; /* same as card */
+  background: linear-gradient(to right, #A3280C, #657F95);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
 }
 
-.star-icon {
-    width: 80px;
-    height: 80px;
-}
-
-.star-icon.blue {
-    fill: #7fb3d3;
-}
-
-.star-icon.green {
-    fill: #95c5a3;
-}
-
-.star-icon.orange {
-    fill: #f4b942;
-}
 
 .benefit-title {
     font-size: 1.5rem;
@@ -105,58 +132,173 @@
     line-height: 1.3;
 }
 
-
-.partnership {
-    background-color: #f8f9fa;
-}
-
 .partnership-content {
-    max-width: 800px;
     margin: 0 auto;
     text-align: left;
 }
 
-.partnership-text {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 24px;
-    line-height: 1.7;
-}
 
-.partnership-cta {
-    font-size: 1.1rem;
-    color: #333;
-    font-weight: 500;
-    margin-bottom: 32px;
-}
 
-.partnership .btn {
-    display: inline-flex;
-}
 
 
 @media (max-width: 1920px) {
+
     /*Hero Sections*/
+    .sponsors-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 445px;
+        margin-bottom: 120px;
+    }
+
     .sponsors-title {
+        margin-top: 50px;
         font-size: 64px;
         font-weight: 600;
     }
 
     .whyspons-subtitle {
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 18px;
+        font-weight: 400 !important;
+        line-height: 100%;
+        font-family: "BR Firma", sans-serif;
     }
-
     .btn-become {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0px; /* Adjust as needed for spacing from the bottom */
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        align-self: flex-end;
         background: #00022B;
-        margin-bottom: 2rem;
 
         padding: 0.5rem 1rem;
         font-size: 24px;
+        white-space: nowrap;
+        font-weight: 600;
+        font-family: "BR Firma", sans-serif;
+        line-height: 31.92px;
+        letter-spacing: -0.64px;
+        color: white;
+        border-radius: 9999px;
+        cursor: hidden;
+        transition: all 0.2s ease;
+        z-index: 2;
+    }
+
+    .btn-become:hover {
+        cursor: hidden;
+    }
+
+
+    /*why-sponsor*/
+    .why-sponsor {
+        max-width: 1078px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .whyspons-title{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 100%;
+        text-align: left;
+        font-family: "BR Firma", sans-serif;
+        color: #000000;
+    }
+
+    .whyspons-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 86px;
+        margin-bottom: 86px;
+    }
+
+    .whyspons-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #00022B;
+        font-family: "BR Firma", sans-serif;
+    }
+
+
+    .benefits-grid {
+        max-width: 945px;
+        height: 400px;
+        gap: 60px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 140px;
+    }
+
+    .benefit-card {
+        padding: 25px 24px;
+
+    }
+
+    .benefit-title {
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0%;
+        line-height: 100%;
+        text-align: left;
+        font-family: "BR Firma", sans-serif;
+                color: #000000;
+    }
+
+
+    /*Partnership*/
+    .become-section {
+        height: 275px;
+        display: flex;
+        margin-bottom: 200px;
+    }
+
+    .container-sponsors {
+        height: 100%;
+        position: relative;
+    }
+
+    .become-title{
+        color: #000000;
+        font-family: "BR Firma", sans-serif;
+        height: 43px;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0%;
+        line-height: 100%;
+        align-content: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .become-content p {
+        font-family: "BR Firma", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0%;
+        line-height: 150%;
+        color: #00022B;
+    }
+
+    .btn-package {
+        position: absolute;
+        bottom: 0px; /* Adjust as needed for spacing from the bottom */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #00022B;
+
+        padding: 0.5rem 1rem;
+        font-size: 24px;
+        white-space: nowrap;
         font-weight: 600;
         font-family: "BR Firma", sans-serif;
         color: white;
@@ -165,48 +307,9 @@
         transition: all 0.2s ease;
         z-index: 2;
     }
-    .btn-become:hover{
+
+    .btn-package:hover {
         cursor: hidden;
     }
-
-    /*why-sponsor*/
-    .why-sponsor {
-        background-color: red;
-        max-width: 1078px;
-        height: 555px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .whyspons-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
-
-        height: 86px;
-        background-color: blue;
-        margin-bottom: 86px;
-    }
-
-    .benefits-grid {
-        background-color: purple;
-        height: 383px;
-        gap: 40px;
-    }
-
-    .benefit-card {
-        padding: 40px 24px;
-
-    }
-
-    .benefit-title{
-        font-size: 32px;
-        font-weight: 600;
-        text-align: left;
-        font-family: "BR Firma", sans-serif;
-    }
-
 
 }

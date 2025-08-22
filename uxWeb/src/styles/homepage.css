@@ -307,7 +307,7 @@ main {
     /* Hero Section */
     .hero-title {
       font-size: 136px;
-      height: 135px !important;
+      height: 300px !important;
     }
   
     .hero-text {
