@@ -1,17 +1,3 @@
-/* Global Styles */
-.hm_tr {
-    position: absolute;
-    top: 38%;
-    right: 0%;
-    transform: translateY(-50%);
-}
-
-.hm_bl {
-    position: absolute;
-    top: 109%;
-    left: 0%;
-    transform: translateY(-50%);
-}
 
 /* Hero Section */ 
 .hero-section-hackathon {
@@ -163,13 +149,6 @@
     background: #00022B linear-gradient(to right, #A3280C, #657F95);
   }
 
-
-  .card img{
-    position: absolute;
-    bottom: 1.2%;
-    right: 1.8%;
-
-  }
   @media (min-width: 2500px) {
   /* Hero Section */
   .container-hackathon {

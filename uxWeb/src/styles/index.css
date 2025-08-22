@@ -28,6 +28,20 @@
   font-size: large;
 }
 
+/* Global Styles */
+.hm_tr {
+    position: absolute;
+    top: 38%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+.hm_bl {
+    position: absolute;
+    top: 109%;
+    left: 0%;
+    transform: translateY(-50%);
+}
 
 body {
   background-color: #FFFCF5;
