@@ -2,12 +2,11 @@ export default function MemberCard({ name, role, headshot }) {
     return (
         <div className="member-container">
             <div className="member-border">
-                <div className={`member-card ${headshot ? 'cofounder-card' : ''}`}>
+                <div className={`member-card`}>
                     {headshot && (
                         <img
-                            className="cofounder-headshot"
+                            className="headshot"
                             src={headshot}
-                            alt="Cofounder"
                             loading="lazy"
                         />
                     )}

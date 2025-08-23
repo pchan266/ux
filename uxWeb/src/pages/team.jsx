@@ -3,12 +3,14 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import MemberCard from "../components/MemberCard";
 import MiniNavbar from "../components/MiniNavbar";
+import Dropdown from "../components/Dropdown";
 import CustomCursor from "../components/customCursor";
 import "../styles/team.css";
 
 
 function Team() {
     const [selected, setSelected] = useState("cofounders");
+    const [execCount, setExecCount] = useState(0)
     
     useEffect(() => {
         AOS.init({
@@ -16,6 +18,10 @@ function Team() {
             once: true,
         })
     }, [])
+
+    useEffect(() => {
+        setExecCount(teamData[selected].filter(m => m.role !== "Director").length);
+    }, [selected])
 
     const navOptions = [
         {label: "Co-Founders", value: "cofounders"},
@@ -49,6 +55,8 @@ function Team() {
         ],
         events: [
             {name: "Mabel Hong", role: "Director", image: "/headshots/events/Mabel.jpg"},
+            {name: "Dr. Sina Azimi", role: "Director", image: "/headshots/events/Dr. Sina Azimi.jpg"},
+            {name: "Lilyana Boraniev", role: "Executive", image: "/headshots/events/Lilyana.jpg"},
             {name: "Shillisa Chapagain", role: "Executive", image: "/headshots/events/Shallisa.jpg"},
             {name: "Simone Jiang", role: "Executive", image: "/headshots/events/Simone_.jpg"},
             {name: "Jason Chen", role: "Executive", image: "/headshots/events/Jason.jpg"},
@@ -69,7 +77,6 @@ function Team() {
 
     }
     
-    const director = teamData[selected].find((member) => member.role === "Director");
 
     return (
         <div className="pb-[10%]"> 
@@ -78,16 +85,38 @@ function Team() {
                 <h1 className="">Our Team</h1>
                 <p className="red-text">Meet the amazing people behind QUX</p>
                 <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
+                <div className="mobile-dropdown">
+                    <Dropdown options={navOptions} selected={selected} setSelected={setSelected} />
+                </div>
             </section>
-            <section className="mt-[33px] flex flex-col items-center gap-[66.93px]" data-aos="fade-up">
-                {director && <MemberCard name={director.name} role={director.role} headshot={director.image}/>}
+            <section className="mt-[70px] flex flex-col items-center gap-[66.93px]" data-aos="fade-up">
+                {/* Desktop layout: Directors and Executives in separate rows */}
+                <div className={` w-[40%] desktop-only`}>
+                    {teamData[selected].map((director, index) => (
+                            director.role === "Director" && <MemberCard key={index} name={director.name} role={director.role} headshot={director.image}/>            
+                    ))}
+                </div>
 
-                <div className={`executive-row ${teamData[selected].length == 4 ? "w-[50%]" : "w-[65%]"} ${!director ? "mt-[5%]" : ""}`}>
+                <div className={`executive-row ${teamData[selected].length === 4 ? "w-[50%]" : "w-[65%]"} 
+                ${execCount > 4 ? "max-w-[55%] min-[2000px]:max-w-[80%] flex flex-wrap-reverse justify-center " : ""} desktop-only`}>
                     {teamData[selected].map((member, index) => (
                         member.role != "Director" && <MemberCard key={index} name={member.name} role={member.role} headshot={member.image}/>            
                     ))}
                 </div>
 
+                {/* iPad layout: All members in one row */}
+                <div className="executive-row ipad-only w-full">
+                    {teamData[selected].map((member, index) => (
+                        <MemberCard key={index} name={member.name} role={member.role} headshot={member.image}/>            
+                    ))}
+                </div>
+
+                {/* Mobile layout: All members in single column */}
+                <div className="mobile-only w-full">
+                    {teamData[selected].map((member, index) => (
+                        <MemberCard key={index} name={member.name} role={member.role} headshot={member.image}/>            
+                    ))}
+                </div>
             </section>
         </div>
     )
