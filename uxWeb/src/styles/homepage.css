@@ -178,6 +178,12 @@ main {
   background: #00022B linear-gradient(to right, #A3280C, #657F95);
 }
 
+.card img{
+  position: absolute;
+  bottom: 1.2%;
+  right: 1.8%;
+
+}
 
 
 /* Vision Section */

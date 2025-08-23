@@ -1,14 +1,14 @@
-import "../styles/header.css"
-import "../styles/footer.css"
-import "../styles/homepage.css"
-import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
-import { useState, useEffect } from "react"
-import EventCarousel from "../components/EventCarouselSingle"
-import MobileEventCarousel from "../components/EventCarouselMobile"
-import LinkButton from "../components/LinkButton"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { ArrowUpRight } from "lucide-react"
+import { useEffect, useState } from "react"
+import MobileEventCarousel from "../components/EventCarouselMobile"
+import EventCarousel from "../components/EventCarouselSingle"
+import LinkButton from "../components/LinkButton"
 import CustomCursor from "../components/customCursor"
+import "../styles/footer.css"
+import "../styles/header.css"
+import "../styles/homepage.css"
 
 export default function homepage() {
   const [showCreativityText, setShowCreativityText] = useState(false);

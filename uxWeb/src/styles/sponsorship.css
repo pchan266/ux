@@ -1,5 +1,5 @@
 .container-sponsors {
-    max-width: 1220px;
+    max-width: 1078px;
     margin: 0 auto;
     padding: 0 0rem;
 }
@@ -10,7 +10,6 @@
 }
 
 .sponsors-title {
-    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 24px;
 }
@@ -166,7 +165,6 @@
 
     .sponsors-title {
         margin-top: 50px;
-        font-size: 64px;
         font-weight: 600;
     }
 
@@ -327,24 +325,61 @@
     }
 
 @media (min-width: 1921px){
+    .container-sponsors{
+        max-width: 1080px;
+    }
+    .benefit-grid{
+        max-width: 1300px;
 
+    }
 }
 
 @media (min-width: 2500px){
+    .container-sponsors{
+        max-width: 1600px;
+    }
 
+    .sponsors-hero {
+        padding-bottom: 15px;
+    }
+    .benefit-grid{
+        max-width: 1230px;
+    }
 }
 
-@media (max-width: 1440px){}
+@media (max-width: 1440px){
+    .container-sponsors {
+        max-width: 809px;
+    }
+}
 
-@media (max-width: 1024px){}
+@media (max-width: 1024px){
+    .container-sponsors {
+        max-width: 575px;
+    }
+}
 
-@media (max-width: 1024px){}
+@media (max-width: 768px){
+    .container-sponsors{
+        max-width: 431px;
+    }
+}
 
-@media (max-width: 768px){}
+@media (max-width: 480px){
+    .container-sponsors{
+        max-width: 270px;
+    }
+}
 
-@media (max-width: 480px){}
+@media (max-width: 375px){
+    .container-sponsors{
+        max-width: 2130px;
+    }
+}
 
-@media (max-width: 375px){}
-
-@media (max-width: 320px){}
+@media (max-width: 320px){
+    .container-sponsors{
+        max-width: 179px;
+    }
+}
 

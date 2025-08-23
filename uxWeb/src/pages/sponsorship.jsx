@@ -8,7 +8,7 @@ export default function Sponsor() {
             <section className="sponsors-hero">
                 <div className="container-sponsors">
                     <h1 className="sponsors-title">Sponsors</h1>
-                    <p className="sponsors-subtitle">Thank you to all of our sponsors who support our team</p>
+                    <p className="red-text">Thank you to all of our sponsors who support our team</p>
                     <a href="#" className="btn-become">
                         Become a Sponsor
                         <span className="arrow">↗</span>
