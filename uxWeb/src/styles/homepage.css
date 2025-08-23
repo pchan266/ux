@@ -312,7 +312,7 @@ main {
   @media (min-width: 1921px) {
     /* Hero Section */
     .hero-title {
-      font-size: 136px;
+      font-size: 136px !important;
       height: 300px !important;
     }
   

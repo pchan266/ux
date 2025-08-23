@@ -1,8 +1,5 @@
 
 /* Hero Section */ 
-.hero-section-hackathon {
-    padding: 0rem 0 0 0;
-}
 
 .container-hackathon{
   max-width: 1150px;
@@ -16,6 +13,7 @@
   gap: 3rem;
   align-items: center;
   justify-content: space-between;
+  height: 464px;
 }
 
 .hero-content-hk {
@@ -25,23 +23,24 @@
 }
 
 .hero-title-hk {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 100%;
-  letter-spacing: 0px;
   font-family: "BR Firma", sans-serif;
+  font-size: clamp(27px, 6vw, 64px);
+  font-weight: 600;
+  text-align: center; 
+ 
 
-
+  margin-bottom: 30px;
+  line-height: 100%;
+  white-space: nowrap;
+  width:fit-content;
   background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
   background-clip: border-box;
   -webkit-background-clip: text;
-  text-align: left;
   -webkit-text-fill-color: transparent;
-  height: 65px;
-  width: 590px;
-  white-space: nowrap;  
-  margin-top: 10rem;
-  margin-bottom: 0.5rem;
+
+  margin-top: 175.95px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-subtitle-hk {
@@ -157,9 +156,7 @@
   }
 
   .hero-title-hk {
-    font-size: 112px;
-    height: 125px;
-    width: 1020px;
+    font-size: 88px;
   }
 
   .hero-subtitle-hk {
@@ -191,11 +188,7 @@
     margin: 0 auto;
   }
 
-  .hero-title-hk {
-    font-size: 88px;
-    height: 115px;
-    width: 820px;
-  }
+
 
   .hero-subtitle-hk {
     font-size: 20px;
@@ -233,9 +226,7 @@
   }
 
   .hero-title-hk {
-    font-size: 56px;
-    height: 60px;
-    width: 520px;
+
   }
 
   .hero-subtitle-hk {
@@ -275,7 +266,6 @@
 @media (max-width: 1024px) {
     /* Hero Section */ 
 .hero-section-hackathon {
-    padding: 10rem 0 0 0;
 }
 
 .container-hackathon {
@@ -284,10 +274,7 @@
 }
 
 .hero-title-hk {
-  padding: 1rem 0 0 0;
-  font-size: 38px;
-  height: 60px;
-  width: 350px;
+
 }
 
 .hero-subtitle-hk {
@@ -334,7 +321,7 @@
     @media (max-width: 768px) {
   /* Hero Section */
   .hero-section-hackathon {
-    padding: 7rem 0 0 0;
+
   }
 
   .container-hackathon {
@@ -351,10 +338,7 @@
 
 
   .hero-title-hk {
-    margin-top: 1rem;
-    font-size: 42px;
-    height: 60px;
-    width: 400px;
+
   }
 
   .hero-subtitle-hk {
@@ -399,9 +383,7 @@
 
 @media (max-width: 480px) {
     /* Hero Section */
-    .hero-section-hackathon {
-        padding: 6rem 0 0 0;
-      }
+
     
       .container-hackathon {
         margin-left: 5vw;

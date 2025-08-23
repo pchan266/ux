@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
-    max-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -150,8 +150,6 @@
     margin: 0 auto;
     text-align: left;
 }
-
-
 
     /*Hero Sections*/
     .sponsors-hero {
@@ -328,7 +326,7 @@
     .container-sponsors{
         max-width: 1080px;
     }
-    .benefit-grid{
+    .benefits-grid{
         max-width: 1300px;
 
     }
@@ -336,13 +334,13 @@
 
 @media (min-width: 2500px){
     .container-sponsors{
-        max-width: 1600px;
+        width: 1600px;
     }
 
     .sponsors-hero {
         padding-bottom: 15px;
     }
-    .benefit-grid{
+    .benefits-grid{
         max-width: 1230px;
     }
 }
@@ -351,11 +349,20 @@
     .container-sponsors {
         max-width: 809px;
     }
+    .benefits-grid{
+        width: 770px;
+    }
 }
 
 @media (max-width: 1024px){
     .container-sponsors {
         max-width: 575px;
+    }
+    .benefits-grid{
+        width: 512px;
+        grid-template-columns: repeat(1, 1fr) !important;
+        height: auto;
+        gap: 2rem;
     }
 }
 
@@ -363,11 +370,17 @@
     .container-sponsors{
         max-width: 431px;
     }
+    .benefit-grid{
+        width: 384px;
+    }
 }
 
 @media (max-width: 480px){
     .container-sponsors{
         max-width: 270px;
+    }
+    .benefit-grid{
+        width: 240px;
     }
 }
 
@@ -375,11 +388,14 @@
     .container-sponsors{
         max-width: 2130px;
     }
+    .benefit-grid{
+        width: 188px;
+    }
 }
 
 @media (max-width: 320px){
     .container-sponsors{
-        max-width: 179px;
+        max-width: 160px;
     }
 }
 
