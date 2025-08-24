@@ -8,6 +8,7 @@ import Layout from "./components/Layout.jsx";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import "./styles/index.css";
 import Sponsorship from './pages/sponsorship.jsx'
+import Projects from "./pages/projects.jsx"
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/sponsorship",
         element: <Sponsorship />
+      },
+      {
+        path: "/projects",
+        element: <Projects />
       },
     ],
   },
