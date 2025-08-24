@@ -43,7 +43,7 @@ export default function EventCarousel({ cardNum }) {
 
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div id="mobile-carousel" className="relative w-full overflow-hidden">
       <div className="absolute right-0 top-0 h-full w-24 pointer-events-none z-10"></div>
 
       <div

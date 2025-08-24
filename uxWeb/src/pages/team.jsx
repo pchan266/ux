@@ -41,7 +41,7 @@ function Team() {
         ],
         sponsorships: [
             {name: "Jason Wu", role: "Director", image: "/headshots/sponsorship/Jason.jpeg"},
-            {name: "Hayden Shalinksy", role: "Executive", image: "/headshots/sponsorship/Hayden.heic"},
+            {name: "Hayden Shalinksy", role: "Executive", image: "/headshots/sponsorship/Hayden.jpg"},
             {name: "Bianca Rotariu", role: "Executive", image: "/headshots/sponsorship/Bianca.jpg"},
             {name: "Ivan Bardziyan", role: "Executive", image: "/headshots/sponsorship/IvanBardziyanHeadshot.jpg"},
         ],

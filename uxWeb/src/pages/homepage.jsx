@@ -179,11 +179,15 @@ export default function homepage() {
           </h2>
           </div>
 
-          <div className="events-carousel-wrapper-homepage">
-            <div className="events-carousel-hmpg-inner">
-            {isMobile ? <MobileEventCarousel cardNum={5} /> : <EventCarousel cardNum={5} />}
+          {isMobile ? (
+            <MobileEventCarousel cardNum={5} />
+          ) : (
+            <div className="events-carousel-wrapper-homepage">
+              <div className="events-carousel-hmpg-inner">
+                <EventCarousel cardNum={5} />
+              </div>
             </div>
-          </div>
+          )}
           <button className="btn" path="/events">See All Events</button>
         </div>
       </section>
