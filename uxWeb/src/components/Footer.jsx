@@ -6,7 +6,7 @@ export default function Footer() {
                 <div className="footer-content">
                     <img src="../Logo (2).svg" alt="UX" className="ux-logo-footer" />
                     <div className="social-links">
-                        <a href="" className="pt-1">
+                        <a href="mailto:queensuxclub@gmail.com" className="pt-1">
                             <svg width="37" height="29" viewBox="0 0 37 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.8375 2.25V0.5C1.35016 0.5 0.882789 0.684375 0.538191 1.01256C0.193593 1.34075 0 1.78587 0 2.25H1.8375ZM34.9125 2.25H36.75C36.75 1.78587 36.5564 1.34075 36.2118 1.01256C35.8672 0.684375 35.3998 0.5 34.9125 0.5V2.25ZM1.8375 4H34.9125V0.5H1.8375V4ZM33.075 2.25V23.25H36.75V2.25H33.075ZM31.2375 25H5.5125V28.5H31.2375V25ZM3.675 23.25V2.25H0V23.25H3.675ZM5.5125 25C5.02516 25 4.55779 24.8156 4.21319 24.4874C3.86859 24.1593 3.675 23.7141 3.675 23.25H0C0 24.6424 0.58078 25.9777 1.61457 26.9623C2.64837 27.9469 4.05049 28.5 5.5125 28.5V25ZM33.075 23.25C33.075 23.7141 32.8814 24.1593 32.5368 24.4874C32.1922 24.8156 31.7248 25 31.2375 25V28.5C32.6995 28.5 34.1016 27.9469 35.1354 26.9623C36.1692 25.9777 36.75 24.6424 36.75 23.25H33.075Z" fill="#FFFCF5" />
                                 <path d="M1.83716 2.25L18.3747 18L34.9122 2.25" stroke="#FFFCF5" stroke-width="3.0625" stroke-linecap="round" stroke-linejoin="round" />
