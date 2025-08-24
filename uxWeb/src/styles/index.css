@@ -470,7 +470,7 @@ a {
 /* Show mobile navbar on mobile devices */
 @media (max-width: 768px) {
   .btn{
-    font-size: 18px;
+    font-size: 16px;
   }
   .mobile-navbar {
     display: block !important;

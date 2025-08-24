@@ -1,15 +1,18 @@
-html, body {
-    cursor: none; /* hide default cursor */
-  }
-
-/* Restore default cursor and hide custom cursor on mobile devices */
+html, body, button, a, input, textarea {
+  cursor: none !important;
+}
+button:hover,
+a:hover {
+  cursor: none !important;
+}
+/* hide custom cursor and use default for mobile*/
 @media (max-width: 768px) {
   html, body {
-    cursor: auto; /* restore default cursor on mobile */
+    cursor: auto; 
   }
   
   .custom-cursor {
-    display: none; /* hide custom cursor on mobile */
+    display: none;
   }
 }
 
@@ -21,7 +24,7 @@ html, body {
 }
 
 .custom-cursor img {
-  width: 20px; /* shrink your SVG */
+  width: 20px;
   height: auto;
   display: block;
 }

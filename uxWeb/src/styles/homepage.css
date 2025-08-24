@@ -175,6 +175,7 @@ main {
 }
 
 .join-btn:hover {
+  cursor: none !important;
   background: #00022B linear-gradient(to right, #A3280C, #657F95);
 }
 
@@ -465,7 +466,7 @@ main {
   }
 
   .join-btn {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   /* Vision Section */
@@ -649,7 +650,7 @@ main {
   }
 
   .join-btn {
-    font-size: 12px;
+    font-size: 16px;
     padding: 0.1rem 0.7rem;
     margin-bottom: 3.4rem;
   }
@@ -718,8 +719,7 @@ main {
   }
 
   .join-btn {
-    font-size: 14px;
-    padding: 0.3rem 0.6rem;
+    padding: 0.1rem 0.6rem;
   }
 
   /* Vision Section */
@@ -779,7 +779,7 @@ main {
 
   .join-btn {
     font-size: 13px;
-    padding: 0.25rem 0.5rem;
+    padding: 0.1rem 0.5rem;
   }
 
   /* Vision Section */

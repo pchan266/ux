@@ -198,11 +198,6 @@
         z-index: 2;
     }
 
-    .btn-become:hover {
-        cursor: hidden;
-    }
-
-
     /*why-sponsor*/
     .why-sponsor {
         max-width: 1078px;
@@ -400,9 +395,6 @@
     .whyspons-subtitle{
         font-size: 18px;
     }
-    .btn-become{
-        font-size: 18px;
-    }
     .container-sponsors{
         max-width: 270px;
     }
@@ -421,10 +413,6 @@
         font-size: 18px !important;
     }
 
-    .btn-package{
-        font-size: 18px;
-    }
-
     .become-content{
         height: 590px;
     }
@@ -433,9 +421,6 @@
 @media (max-width: 375px){
     .container-sponsors{
         max-width: 200px;
-    }
-    .btn-become{
-        font-size: 14px;
     }
 
     .benefits-grid{
@@ -449,9 +434,6 @@
     }
     .become-content{
         height: 760px;
-    }
-    .btn-package{
-        font-size: 14px;
     }
 
 }
