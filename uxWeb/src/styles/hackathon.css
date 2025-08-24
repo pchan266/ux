@@ -38,7 +38,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  margin-top: 175.95px;
+  margin-top: 155.95px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -225,8 +225,8 @@
     margin: 0 auto;
   }
 
-  .hero-title-hk {
-
+  .hero-grid-hk{
+    height: 444px;
   }
 
   .hero-subtitle-hk {
@@ -287,12 +287,17 @@
 }
 
 .hero-image-hk {
-  max-width: 20rem;
+  max-width: 16rem;
+  margin-top: 1rem;
+
 }
 
 .hero-grid-hk {
-  height: 200px;
-  margin-bottom: 8rem;
+  height: 500px;
+  margin-bottom: 14rem;
+  flex-direction: column;
+  gap: 2rem;
+
 }
 
       
@@ -342,16 +347,16 @@
   }
 
   .hero-subtitle-hk {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .hero-btn-hk {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0.7rem 1.4rem;
   }
 
   .hero-image-hk {
-    max-width: 16rem;
+    max-width: 14rem;
     margin-top: 1rem;
   }
   
@@ -388,19 +393,18 @@
       .container-hackathon {
         margin-left: 5vw;
       }
-    
-      .hero-title-hk {
-        font-size: 36px;
-        height: 55px;
-        width: 340px;
+
+      .hero-title-hk{
+        margin-top: 165px;
       }
+    
     
       .hero-content-hk {
         gap: 1rem;
       }
     
       .hero-subtitle-hk {
-        font-size: 14px;
+        font-size: 10px;
         margin-bottom: 0.5rem;
       }
     
@@ -410,7 +414,7 @@
       }
     
       .hero-image-hk {
-        max-width: 14rem;
+        max-width: 12rem;
       }
     
       .hero-grid-hk {

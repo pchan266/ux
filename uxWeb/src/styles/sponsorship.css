@@ -6,7 +6,7 @@
 
 .sponsors-hero {
     text-align: center;
-    padding: 120px 0 80px;
+    padding: 130px 0 80px;
 }
 
 .sponsors-title {
@@ -352,17 +352,39 @@
     .benefits-grid{
         width: 770px;
     }
+    .benefit-card{
+        width: 230px;
+    }
 }
 
 @media (max-width: 1024px){
     .container-sponsors {
         max-width: 575px;
     }
+
+    .whyspons-title{
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+
+
+    
     .benefits-grid{
         width: 512px;
         grid-template-columns: repeat(1, 1fr) !important;
         height: auto;
         gap: 2rem;
+    }
+    .benefit-card{
+        margin: 2rem auto 0 auto;
+        width: 350px;
+    }
+
+    .become-content{
+        height: 350px;
+    }
+    .become-section{
+        height: 350px;
     }
 }
 
@@ -370,32 +392,79 @@
     .container-sponsors{
         max-width: 431px;
     }
-    .benefit-grid{
+    .benefits-grid{
         width: 384px;
+    
     }
 }
 
 @media (max-width: 480px){
+    .whyspons-title{
+        font-size: 22px;
+    }
+    .whyspons-subtitle{
+        font-size: 18px;
+    }
+    .btn-become{
+        font-size: 18px;
+    }
     .container-sponsors{
         max-width: 270px;
     }
-    .benefit-grid{
+    .benefits-grid{
         width: 240px;
+    }
+    .benefit-card{
+        max-width: 240px;
+    }
+
+    .become-title{
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+    .partnership-text{
+        font-size: 18px !important;
+    }
+
+    .btn-package{
+        font-size: 18px;
+    }
+
+    .become-section{
+        height: 590px;
+    }
+    .become-content{
+        height: 590px;
     }
 }
 
 @media (max-width: 375px){
     .container-sponsors{
-        max-width: 2130px;
+        max-width: 200px;
     }
-    .benefit-grid{
+    .btn-become{
+        font-size: 14px;
+    }
+
+    .benefits-grid{
         width: 188px;
     }
-}
-
-@media (max-width: 320px){
-    .container-sponsors{
-        max-width: 160px;
+    .benefit-card{
+        max-width: 188px;
     }
+    .benefit-title{
+        font-size: 18px;
+    }
+
+    .become-section{
+        height: 760px;
+    }
+    .become-content{
+        height: 760px;
+    }
+    .btn-package{
+        font-size: 14px;
+    }
+
 }
 
