@@ -9,7 +9,7 @@ export default function Sponsor() {
                 <div className="container-sponsors">
                     <h1 className="sponsors-title">Sponsors</h1>
                     <p className="red-text">Thank you to all of our sponsors who support our team</p>
-                    <a href="#" className="btn-become">
+                    <a href="#" className="btn">
                         Become a Sponsor
                         <span className="arrow">↗</span>
                     </a>
@@ -60,11 +60,12 @@ export default function Sponsor() {
                         </p>
                         <p className="partnership-cta mt-6">Take the first step toward a valuable and rewarding partnership.</p>
                         
-                    </div>
-                    <a href="#" className="btn-package">
+                        <a href="#" className="btn absolute bottom-0">
                             Sponsorship Package
                             <span className="arrow">↗</span>
                         </a>
+                    </div>
+                    
                 </div>
             </section>
         </>

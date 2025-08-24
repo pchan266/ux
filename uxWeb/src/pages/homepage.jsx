@@ -1,14 +1,13 @@
-import "../styles/header.css"
-import "../styles/footer.css"
-import "../styles/homepage.css"
-import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
-import { useState, useEffect } from "react"
-import EventCarousel from "../components/EventCarouselSingle"
-import MobileEventCarousel from "../components/EventCarouselMobile"
-import LinkButton from "../components/LinkButton"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { ArrowUpRight } from "lucide-react"
+import { useEffect, useState } from "react"
+import MobileEventCarousel from "../components/EventCarouselMobile"
+import EventCarousel from "../components/EventCarouselSingle"
 import CustomCursor from "../components/customCursor"
+import "../styles/footer.css"
+import "../styles/header.css"
+import "../styles/homepage.css"
 
 export default function homepage() {
   const [showCreativityText, setShowCreativityText] = useState(false);
@@ -72,7 +71,6 @@ export default function homepage() {
 
       {/* Vision Section */}
       <section className="vision">
-        {/* vision stars */}
 
         {/* vision content */}
         <div className="container-homepage">
@@ -164,7 +162,7 @@ export default function homepage() {
             }
             </div>
           </div>
-          <a href="#" className="meet-team-btn">
+          <a href="/team" className="meet-team-btn">
             Meet Our Team <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
           </a>
           </div>
@@ -186,7 +184,7 @@ export default function homepage() {
             {isMobile ? <MobileEventCarousel cardNum={5} /> : <EventCarousel cardNum={5} />}
             </div>
           </div>
-          <LinkButton arrowStyle="up" className="events-btn-homepage" path="/events">See All Events</LinkButton>
+          <button className="btn" path="/events">See All Events</button>
         </div>
       </section>
 

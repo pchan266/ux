@@ -25,10 +25,8 @@ export default function hackathon() {
               <h1 className="hero-title-hk">
                 Designathon 2025
               </h1>
-
               <p className="hero-subtitle-hk">December 3rd-5th, 2025 | In Person | Kingston, ON</p>
-
-              <button className="hero-btn-hk">Apply Now →</button>
+              <a>Applications open soon!</a>
             </div>
 
             <div className="hero-image-container-hk">

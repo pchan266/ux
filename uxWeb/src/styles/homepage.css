@@ -240,7 +240,7 @@ main {
   -webkit-text-fill-color: transparent;
   height: 100px;
   width: 900px;
-
+  white-space: nowrap;
 }
 .events-btn-homepage {
   position: absolute;
@@ -406,7 +406,6 @@ main {
   }
   
   @media (max-width: 1024px) {
-
     .event-category-title {
       margin-left: 5%;
     }
@@ -493,6 +492,7 @@ main {
   }
   .upcoming-events-title {
     font-size: 72px;
+    width: 620px;
   }
 
   .events-carousel-wrapper-homepage {
@@ -512,11 +512,7 @@ main {
        -0.5rem extra so card 2 peeks from left */
     transition: transform 0.3s ease; /* optional */
   }
-  
-
 }
-
-
 
   @media (max-width: 768px) {
     /* Global Styles */
@@ -573,7 +569,7 @@ main {
 
   .join-btn {
     align-self: flex-end;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0.4rem 0.8rem;
   }
 
@@ -600,11 +596,12 @@ main {
   /* Events Section */
   .upcoming-events-title-container {
     max-width: 480px;
-    height: 70px;
+    height: 100px;
   }
   .upcoming-events-title {
     font-size: 52px;
     white-space: normal;
+    width: 260px;
   }
 
   }
@@ -642,7 +639,7 @@ main {
   .hero-title {
     font-size: 42px;
     height: 90px;
-    width: 250px;
+    width: 180px;
     margin-bottom: 1.5rem;
   }
 
@@ -652,8 +649,9 @@ main {
   }
 
   .join-btn {
-    font-size: 16px;
-    padding: 0.3rem 0.7rem;
+    font-size: 12px;
+    padding: 0.1rem 0.7rem;
+    margin-bottom: 3.4rem;
   }
 
   /* Vision Section */
@@ -684,6 +682,7 @@ main {
   .upcoming-events-title {
     font-size: 42px;
   }
+ 
 
     
   }

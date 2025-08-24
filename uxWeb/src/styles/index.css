@@ -438,8 +438,40 @@ a {
   background: #00022B;
 }
 
+.btn{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Adjust as needed for spacing from the bottom */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #00022B;
+
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 31.92px;
+  letter-spacing: -0.64px;
+  color: white;
+  border-radius: 9999px;
+  cursor: hidden;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.btn:hover {
+  background: #00022B linear-gradient(to right, #A3280C, #657F95);
+}
+
 /* Show mobile navbar on mobile devices */
 @media (max-width: 768px) {
+  .btn{
+    font-size: 18px;
+  }
   .mobile-navbar {
     display: block !important;
   }

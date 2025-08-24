@@ -27,6 +27,7 @@
   font-family: "BR Firma", sans-serif;
   line-height: 100%;
   letter-spacing: 0px;
+  white-space: nowrap;
 
   text-align: left;
   z-index: 1;
@@ -36,6 +37,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 6rem;
+  width: 570px;
 }
 
 .values-grid {
@@ -289,6 +291,7 @@
   .values-title {
     font-size: 82px;
     margin-bottom: 7rem;
+    width: 500px;
   }
 
   .value-title {
@@ -322,6 +325,7 @@
   .values-title {
     font-size: 72px;
     margin-bottom: 4rem;
+    width: 420px;
   }
 
   .values-grid {
@@ -332,6 +336,7 @@
 
   .value-title {
     font-size: 36px;
+    width: 200px;
   }
 
   .meet-team-btn {
@@ -361,6 +366,7 @@
   .values-title {
     font-size: 56px;
     margin-bottom: 3rem;
+    width: 340px;
   }
 
   .values-grid {
@@ -407,6 +413,8 @@
   .values-title {
     font-size: 42px;
     margin-bottom: 2.5rem;
+    white-space: nowrap;
+    width: 250px;
   }
 
   .values-grid {
