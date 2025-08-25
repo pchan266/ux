@@ -264,21 +264,15 @@
 }
 
 @media (max-width: 1024px) {
-    /* Hero Section */ 
-.hero-section-hackathon {
-}
+    /* Hero Section */
 
 .container-hackathon {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.hero-title-hk {
-
-}
-
 .hero-subtitle-hk {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .hero-btn-hk {
@@ -325,10 +319,6 @@
 
     @media (max-width: 768px) {
   /* Hero Section */
-  .hero-section-hackathon {
-
-  }
-
   .container-hackathon {
     max-width: 90%;
   }
@@ -338,16 +328,6 @@
     gap: 0rem;
     align-items: center;
     height: 500px;
-  }
-
-
-
-  .hero-title-hk {
-
-  }
-
-  .hero-subtitle-hk {
-    font-size: 11px;
   }
 
   .hero-btn-hk {
@@ -375,10 +355,6 @@
     max-width: 90%;
   }
 
-  .section-text-hk {
-    font-size: 12px;
-  }
-
   .sponsor-btn-hk {
     font-size: 18px;
     padding: 0.7rem 1.4rem;
@@ -388,8 +364,6 @@
 
 @media (max-width: 480px) {
     /* Hero Section */
-
-    
       .container-hackathon {
         margin-left: 5vw;
       }
@@ -402,12 +376,7 @@
       .hero-content-hk {
         gap: 1rem;
       }
-    
-      .hero-subtitle-hk {
-        font-size: 10px;
-        margin-bottom: 0.5rem;
-      }
-    
+       
       .hero-btn-hk {
         font-size: 16px;
         padding: 0.6rem 1.2rem;
@@ -441,11 +410,6 @@
         max-width: 95%;
       }
     
-      .section-text-hk {
-        font-size: 11px;
-        line-height: 140%;
-      }
-    
       .sponsor-btn-hk {
         font-size: 16px;
         padding: 0.6rem 1.2rem;
@@ -466,15 +430,6 @@
     width: 300px;
   }
 
-  .hero-subtitle-hk {
-    font-size: 13px;
-  }
-
-  .hero-btn-hk {
-    font-size: 15px;
-    padding: 0.5rem 1rem;
-  }
-
   .hero-image-hk {
     max-width: 14rem;
   }
@@ -487,17 +442,6 @@
     margin-top: 4rem;
     font-size: 22px;
   }
-
-  .section-text-hk {
-    font-size: 10px;
-    line-height: 135%;
-  }
-
-  .sponsor-btn-hk {
-    font-size: 15px;
-    padding: 0.5rem 1rem;
-    margin-bottom: 5rem;
-  }
 }
 
 @media (max-width: 320px) {
@@ -506,15 +450,6 @@
         font-size: 28px;
         height: 45px;
         width: 260px;
-      }
-    
-      .hero-subtitle-hk {
-        font-size: 10px;
-      }
-    
-      .hero-btn-hk {
-        font-size: 14px;
-        padding: 0.4rem 0.9rem;
       }
     
       .hero-image-hk {
@@ -530,16 +465,5 @@
   .section-title-hk {
     margin-top: 3.5rem;
     font-size: 20px;
-  }
-
-  .section-text-hk {
-    font-size: 10px;
-    line-height: 130%;
-  }
-
-  .sponsor-btn-hk {
-    font-size: 14px;
-    padding: 0.4rem 0.9rem;
-    margin-bottom: 4rem;
   }
 }

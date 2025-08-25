@@ -66,11 +66,11 @@ export default function hackathon() {
       {/* Sponsor Section */}
       <section className="content-section-hackathon" data-aos="fade-up">
         <div className="container-hackathon">
-          <div className="section-content-hk">
+          <div className="section-content-hk h-100">
             <h2 className="section-title-hk">Sponsor the launch of design packed weekend</h2>
 
             <div className="section-text-hk">
-              <p>
+              <p className="mb-20">
               Thanks to the generous support of our sponsors and partners, our Designathon 
               is able to provide participants with a meaningful space to collaborate and grow. 
               Their contributions power the creativity, innovation, and memorable moments that 
@@ -78,7 +78,7 @@ export default function hackathon() {
               </p>
             </div>
 
-            <button className="sponsor-btn-hk">Become a Sponsor →</button>
+            <div className="btn">Become a Sponsor →</div>
           </div>
         </div> 
       </section>

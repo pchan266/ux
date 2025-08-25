@@ -113,15 +113,12 @@
     width: 200px;
     height: 150px;
   }
-
-  .social-icon {
-    width: 1.1rem;
-    height: 1.1rem;
-  }
-
   .social-links {
     gap: 1.2rem;
     padding-bottom: 1.2rem;
+  }
+  .footer-content{
+    gap: 0rem;
   }
 }
 
@@ -130,10 +127,8 @@
     width: 150px;
     height: 100px;
   }
-
-  .social-icon {
-    width: 1rem;
-    height: 1rem;
+  .footer-content {
+    gap: 0rem;
   }
 
   .social-links {

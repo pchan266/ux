@@ -459,10 +459,11 @@
   }
 
   .meet-team-btn {
-    font-size: 14px;
+    font-size: 16px;
   }
   .value-description {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 0 0.3rem 0 0.3rem;
   }
 }
 
@@ -473,23 +474,21 @@
 
   .values-title {
     font-size: 32px;
-  }
-  .value-description {
-    font-size: 10px;
-    max-width: 100px !important;
+    width: 200px;
   }
   .value-card {
     width: 210px;
   }
+  .value-description {
+    font-size: 16px;
+    padding: 0 0.6rem 0 0.6rem;
+  }
 
   .value-title {
-    font-size: 14px;
+    font-size: 18px;
   }
 
-  .meet-team-btn {
-    font-size: 13px;
-    padding: 0.3rem 0.7rem;
-  }
+
 }
 
 
