@@ -3,10 +3,10 @@ import "../styles/sponsorship.css"
 
 export default function Sponsor() {
     return (
-        <>
+        <div>
             <CustomCursor />
             <section className="sponsors-hero">
-                <div className="container-sponsors">
+                <div className="container-sponsors" data-aos="fade-right">
                     <h1 className="sponsors-title">Sponsors</h1>
                     <p className="red-text">Thank you to all of our sponsors who support our team</p>
                     <a href="#" className="btn">
@@ -16,7 +16,7 @@ export default function Sponsor() {
                 </div>
             </section>
             <section className="why-sponsor section">
-                <div className="container-sponsors">
+                <div className="container-sponsors" data-aos="fade-left">
 
                     <div className="whyspons-content">
                         <h2 className="whyspons-title">Why Become a Sponsor?</h2>
@@ -48,7 +48,7 @@ export default function Sponsor() {
                 </div>
             </section>
             <section className="become-section">
-                <div className="container-sponsors">
+                <div className="container-sponsors" data-aos="fade-up">
                     
                     <div className="become-content">
                         <h2 className="become-title">Ready to Partner With Us?</h2>
@@ -68,6 +68,6 @@ export default function Sponsor() {
                     
                 </div>
             </section>
-        </>
+        </div>
     )
 }
