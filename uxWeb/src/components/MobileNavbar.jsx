@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/header.css';
+
 
 export default function MobileNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,17 +52,17 @@ export default function MobileNavbar() {
                     </div>
                     
                     <nav className="mobile-nav-links">
-                        <a href="/team" onClick={closeMenu}>Our Team</a>
-                        <a href="/events" onClick={closeMenu}>Events</a>
-                        <a href="/hackathon" onClick={closeMenu}>Hackathon</a>
-                        <a href="/sponsorship" onClick={closeMenu}>Sponsorship</a>
-                        <a href="/projects" onClick={closeMenu}>Projects</a>
+                        <Link to="/team" onClick={closeMenu}>Our Team</Link>
+                        <Link to="/events" onClick={closeMenu}>Events</Link>
+                        <Link to="/hackathon" onClick={closeMenu}>Hackathon</Link>
+                        <Link to="/sponsorship" onClick={closeMenu}>Sponsorship</Link>
+                        <Link to="/projects" onClick={closeMenu}>Projects</Link>
                     </nav>
                     
                     <div className="mobile-contact-section">
-                        <a href="#" className="mobile-contact-btn" onClick={closeMenu}>
+                        <Link to="#" className="mobile-contact-btn" onClick={closeMenu}>
                             Contact
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
