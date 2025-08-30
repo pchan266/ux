@@ -1,0 +1,20 @@
+<!-- public/Logo.nofilter.svg -->
+<svg width="61" height="47" viewBox="0 0 61 47" fill="none" xmlns="http://www.w3.org/2000/svg"
+     shape-rendering="geometricPrecision" preserveAspectRatio="xMidYMid meet">
+  <!-- same two shapes, just without the filter wrapper -->
+  <path d="M23.6124 16.1523C23.2004 20.5816 31.667 24.2069 31.667 24.2069C31.667 24.2069 24.8359 27.2022 24.9834 30.8905C25.1196 34.2951 27.7483 36.9238 31.1529 37.06C34.8412 37.2075 37.8365 30.3764 37.8365 30.3764C37.8365 30.3764 40.6766 36.6251 44.1773 36.7172C47.8673 36.8143 50.958 33.7236 50.8609 30.0336C50.7688 26.5329 44.52 23.6928 44.52 23.6928C44.52 23.6928 51.7978 20.5388 51.5464 16.6665C51.3256 13.2663 48.7771 10.7178 45.3769 10.497C41.5045 10.2455 38.3506 17.5233 38.3506 17.5233C38.3506 17.5233 34.7253 9.05673 30.296 9.46876C26.6206 9.81065 23.9543 12.477 23.6124 16.1523Z" fill="url(#paint0_linear)"/>
+  <path d="M10.8262 10.4922H2.96167C2.96167 10.4922 -2.57709 25.4311 2.96167 31.4643C8.99496 38.0363 19.7731 38.0363 25.8063 31.4643C31.3451 25.4311 25.8063 10.4922 25.8063 10.4922H18.3163C18.3163 10.4922 23.0767 21.7756 18.3163 24.3488C15.7431 25.7397 13.3994 25.7397 10.8262 24.3488C6.06584 21.7756 10.8262 10.4922 10.8262 10.4922Z" fill="url(#paint1_linear)"/>
+
+  <defs>
+    <linearGradient id="paint0_linear" x1="26.0707" y1="34.4291" x2="48.8821" y2="11.6177" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FB1BE"/>
+      <stop offset="0.5" stop-color="#00022B"/>
+      <stop offset="1" stop-color="#D53302"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="0.5" y1="23.4428" x2="28.268" y2="23.4428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FB1BE"/>
+      <stop offset="0.5" stop-color="#00022B"/>
+      <stop offset="1" stop-color="#D53302"/>
+    </linearGradient>
+  </defs>
+</svg>

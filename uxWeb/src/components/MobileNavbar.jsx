@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/header.css';
 
 
+
 export default function MobileNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -18,12 +19,15 @@ export default function MobileNavbar() {
         <div className="mobile-navbar">
             <div className="mobile-navbar-container">
                 <div className="mobile-logo">
-                    <a href="/" className="mobile-logo-link">
-                        <img src="../Logo.svg" alt="UX" className="mobile-ux-logo"/>
-                    </a>
+                    <Link to="/" className="mobile-logo-link">
+                        <picture>
+                            <source srcSet="../Logo.nofilter.svg" media="(max-width: 768px)" />
+                            <img src='../Logo.svg' alt="UX" className="mobile-ux-logo" />
+                        </picture>
+                    </Link>
                 </div>
                 
-                <button 
+                <button
                     className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`}
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
@@ -39,7 +43,12 @@ export default function MobileNavbar() {
                 <div className="mobile-menu-content" onClick={(e) => e.stopPropagation()}>
                     <div className="mobile-menu-header">
                         <div className="mobile-menu-logo">
-                            <img src="../Logo.svg" alt="UX" className="mobile-menu-ux-logo"/>
+                            <Link to="/" className="mobile-logo-link" onClick={closeMenu}>
+                                <picture>
+                                    <source srcSet="../Logo.nofilter.svg" media="(max-width: 768px)" />
+                                    <img src='../Logo.svg' alt="UX" className="mobile-ux-logo" />
+                                </picture>
+                            </Link>
                         </div>
                         <button 
                             className="mobile-menu-close"

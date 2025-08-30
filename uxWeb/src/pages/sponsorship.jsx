@@ -3,7 +3,7 @@ import "../styles/sponsorship.css"
 
 export default function Sponsor() {
     return (
-        <div>
+        <>
             <CustomCursor />
             <section className="sponsors-hero">
                 <div className="container-sponsors" data-aos="fade-right">
@@ -68,6 +68,6 @@ export default function Sponsor() {
                     
                 </div>
             </section>
-        </div>
+        </>
     )
 }

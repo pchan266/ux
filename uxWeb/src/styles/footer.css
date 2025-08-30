@@ -110,12 +110,14 @@
 
 @media (max-width: 480px) {
   .ux-logo-footer {
-    width: 200px;
-    height: 150px;
+    width: 160px;
+    height: auto;
+    transform: translateY(0%);
   }
   .social-links {
     gap: 1.2rem;
     padding-bottom: 1.2rem;
+    margin-left: 0;
   }
   .footer-content{
     gap: 0rem;
@@ -124,8 +126,8 @@
 
 @media (max-width: 375px) {
   .ux-logo-footer {
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: auto;
   }
   .footer-content {
     gap: 0rem;
