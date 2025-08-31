@@ -12,13 +12,15 @@ export default function Navbar() {
             <div className="nav-links">
                 <Link to="/team">Our Team</Link>
                 <Link to="/events">Events</Link>
-                <Link to="/hackathon">Hackathon</Link>
+                <Link to="/hackathon">Designathon</Link>
                 <Link to="/sponsorship">Sponsorship</Link>
                 <Link to="/projects">Projects</Link>
             </div>
-            <a href="#" className="contact-btn">
+            <Link to="https://discord.gg/fRpBQSvtg8">
+            <a className="contact-btn">
                 Contact
             </a>
+            </Link>
         </div>
     )
 }

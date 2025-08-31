@@ -63,7 +63,7 @@ export default function MobileNavbar() {
                     <nav className="mobile-nav-links">
                         <Link to="/team" onClick={closeMenu}>Our Team</Link>
                         <Link to="/events" onClick={closeMenu}>Events</Link>
-                        <Link to="/hackathon" onClick={closeMenu}>Hackathon</Link>
+                        <Link to="/hackathon" onClick={closeMenu}>Designathon</Link>
                         <Link to="/sponsorship" onClick={closeMenu}>Sponsorship</Link>
                         <Link to="/projects" onClick={closeMenu}>Projects</Link>
                     </nav>

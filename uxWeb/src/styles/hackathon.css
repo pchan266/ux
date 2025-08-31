@@ -41,6 +41,7 @@
   margin-top: 155.95px;
   margin-left: auto;
   margin-right: auto;
+  height: 70px;
 }
 
 .hero-subtitle-hk {
@@ -157,6 +158,7 @@
 
   .hero-title-hk {
     font-size: 88px;
+    height: 100px;
   }
 
   .hero-subtitle-hk {
@@ -188,7 +190,10 @@
     margin: 0 auto;
   }
 
-
+  .hero-title-hk {
+    font-size: 88px;
+    height: 100px;
+  }
 
   .hero-subtitle-hk {
     font-size: 20px;
