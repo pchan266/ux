@@ -290,24 +290,28 @@
     }
 
     .btn-package {
-        position: absolute;
-        bottom: 0px;
-        /* Adjust as needed for spacing from the bottom */
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: #00022B;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-        padding: 0.5rem 1rem;
-        font-size: 24px;
-        white-space: nowrap;
-        font-weight: 600;
-        font-family: "BR Firma", sans-serif;
-        color: white;
-        border-radius: 9999px;
-        cursor: hidden;
-        transition: all 0.2s ease;
-        z-index: 2;
+  /* Adjust as needed for spacing from the bottom */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #00022B;
+
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 31.92px;
+  letter-spacing: -0.64px;
+  color: white;
+  border-radius: 9999px;
+  cursor: hidden;
+  transition: all 0.2s ease;
+  z-index: 2;
     }
 
     .btn-package:hover {
@@ -411,10 +415,11 @@
     }
     .partnership-text{
         font-size: 18px !important;
+        margin-bottom: 2rem !important;
     }
 
     .become-content{
-        height: 590px;
+        height: 620px;
     }
 }
 

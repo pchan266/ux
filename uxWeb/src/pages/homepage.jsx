@@ -8,6 +8,7 @@ import CustomCursor from "../components/customCursor"
 import "../styles/footer.css"
 import "../styles/header.css"
 import "../styles/homepage.css"
+import { Link } from "react-router-dom"
 
 export default function homepage() {
   const [showCreativityText, setShowCreativityText] = useState(false);
@@ -188,7 +189,11 @@ export default function homepage() {
               </div>
             </div>
           )}
-          <button className="btn" path="/events">See All Events</button>
+          <Link to="/events">
+            <a className="btn">
+              See All Events
+            </a>
+          </Link>
         </div>
       </section>
 

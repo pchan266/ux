@@ -58,9 +58,9 @@ export default function Sponsor() {
                              meaningful experiences to our community. We offer flexible sponsorship options designed 
                              to match your goals and highlight your brand in thoughtful, effective ways.
                         </p>
-                        <p className="partnership-cta mt-6">Take the first step toward a valuable and rewarding partnership.</p>
+                        <p className="partnership-cta mt-6 mb-10">Take the first step toward a valuable and rewarding partnership.</p>
                         
-                        <a href="#" className="btn absolute bottom-0">
+                        <a href="#" className="btn">
                             Sponsorship Package
                             <span className="arrow">↗</span>
                         </a>
