@@ -374,7 +374,7 @@
       }
 
       .hero-title-hk{
-        margin-top: 165px;
+        margin-top: 120px;
       }
     
     
@@ -392,7 +392,7 @@
       }
     
       .hero-grid-hk {
-        margin-bottom: 5rem;
+        margin-bottom: 9rem;
         height: 450px;
       }
 
@@ -413,12 +413,12 @@
     
       .section-content-hk {
         max-width: 95%;
+        margin-bottom: 7rem;
       }
     
       .sponsor-btn-hk {
         font-size: 16px;
         padding: 0.6rem 1.2rem;
-        margin-bottom: 6rem;
       }
     }
 

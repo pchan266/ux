@@ -52,9 +52,11 @@ export default function homepage() {
                 <br />
                 UX Club
               </h1>
-              <div href="#" className="join-btn">
-                Join <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
-              </div>
+              <Link to="https://discord.gg/fRpBQSvtg8">
+                <div className="join-btn">
+                  Join <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
+                </div>
+              </Link>
             </div>
             <div className="hero-body">
               <div className="hero-text">

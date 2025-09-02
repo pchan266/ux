@@ -151,15 +151,16 @@ main {
 
 .hero-top {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+
+  position: relative;
 }
 
 .join-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
   background: #00022B;
   margin-bottom: 2rem;
   
@@ -172,6 +173,7 @@ main {
   cursor: pointer;
   transition: all 0.2s ease;
   z-index: 2;
+  white-space: nowrap;
 }
 
 .join-btn:hover {
@@ -658,6 +660,9 @@ main {
   }
 
   /* Events Section */
+  .events{
+    padding-top: 0rem;
+  }
   .upcoming-events-title-container {
     max-width: 375px;
     padding: 0 0rem;
@@ -665,9 +670,6 @@ main {
   .upcoming-events-title {
     font-size: 42px;
   }
- 
-
-    
   }
   @media (max-width: 375px) {
     /* Global Styles */

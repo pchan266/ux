@@ -16,7 +16,7 @@ export default function Navbar() {
                 <Link to="/sponsorship">Sponsorship</Link>
                 <Link to="/projects">Projects</Link>
             </div>
-            <Link to="https://discord.gg/fRpBQSvtg8">
+            <Link to="mailto:queensuxclub@gmail.com">
             <a className="contact-btn">
                 Contact
             </a>
