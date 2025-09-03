@@ -20,7 +20,7 @@ function Team() {
     }, [])
 
     useEffect(() => {
-        setExecCount(teamData[selected].filter(m => m.role !== "Director").length);
+        setExecCount(teamData[selected].filter(m => !m.role.endsWith("Director")).length);
     }, [selected])
 
     const navOptions = [
@@ -34,10 +34,10 @@ function Team() {
 
     const teamData = {
         cofounders: [
-            {name: "Renee Kim", role: "Executive", image: "./headshots/cofounders/Renee.jpg"},
-            {name: "Amanda Zhu", role: "Executive", image: "/headshots/cofounders/IMG_8919.JPG"},
-            {name: "Amanda Li", role: "Executive", image: "/headshots/cofounders/Amanda.jpg"},
-            {name: "Noah Yu", role: "Executive", image: "/headshots/cofounders/Noah.jpeg"}
+            {name: "Renee Kim", role: "", image: "./headshots/cofounders/Renee.jpg"},
+            {name: "Amanda Zhu", role: "", image: "/headshots/cofounders/IMG_8919.JPG"},
+            {name: "Amanda Li", role: "", image: "/headshots/cofounders/Amanda.jpg"},
+            {name: "Noah Yu", role: "", image: "/headshots/cofounders/Noah.jpeg"}
         ],
         sponsorships: [
             {name: "Jason Wu", role: "Director", image: "/headshots/sponsorship/Jason.jpeg"},
@@ -55,8 +55,8 @@ function Team() {
         ],
         events: [
             {name: "Mabel Hong", role: "Director", image: "/headshots/events/Mabel.jpg"},
-            {name: "Dr. Sina Azimi", role: "Director", image: "/headshots/events/Dr. Sina Azimi.jpg"},
-            {name: "Lilyana Boraniev", role: "Executive", image: "/headshots/events/Lilyana.jpg"},
+            {name: "Dr. Sina Azimi", role: "UX Research Director", image: "/headshots/events/Dr. Sina Azimi.jpg"},
+            {name: "Lilyana Boraniev", role: "Research Executive", image: "/headshots/events/Lilyana.jpg"},
             {name: "Shillisa Chapagain", role: "Executive", image: "/headshots/events/Shallisa.jpg"},
             {name: "Simone Jiang", role: "Executive", image: "/headshots/events/Simone_.jpg"},
             {name: "Jason Chen", role: "Executive", image: "/headshots/events/Jason.jpg"},
@@ -93,14 +93,14 @@ function Team() {
                 {/* Desktop layout: Directors and Executives in separate rows */}
                 <div className={` w-[40%] desktop-only`}>
                     {teamData[selected].map((director, index) => (
-                            director.role === "Director" && <MemberCard key={index} name={director.name} role={director.role} headshot={director.image}/>            
+                            director.role.endsWith("Director") && <MemberCard key={index} name={director.name} role={director.role} headshot={director.image}/>            
                     ))}
                 </div>
 
                 <div className={`executive-row ${teamData[selected].length === 4 ? "w-[50%]" : "w-[65%]"} 
                 ${execCount > 4 ? "max-w-[55%] min-[2000px]:max-w-[80%] flex flex-wrap-reverse justify-center " : ""} desktop-only`}>
                     {teamData[selected].map((member, index) => (
-                        member.role != "Director" && <MemberCard key={index} name={member.name} role={member.role} headshot={member.image}/>            
+                        !member.role.endsWith("Director") && <MemberCard key={index} name={member.name} role={member.role} headshot={member.image}/>            
                     ))}
                 </div>
 

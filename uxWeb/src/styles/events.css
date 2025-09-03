@@ -78,7 +78,7 @@
   width: 7rem;
   height: 25px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -101,7 +101,7 @@
 
 .event-description {
   font-family: "BR Firma", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: 0px;
@@ -111,6 +111,9 @@
 @media (max-width: 1000px) {
   .event-category-title {
     margin-left: 5%;
+  }
+  .event-card {
+    padding: 2rem !important;
   }
 }
 
