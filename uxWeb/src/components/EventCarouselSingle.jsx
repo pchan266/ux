@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import EventCard from "./EventCard";
 import "../styles/events.css";
 
-export default function EventCarousel({ cardNum }) {
+export default function EventCarousel({ cardNum, events = [] }) {
   const containerRef = useRef(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
@@ -122,7 +122,7 @@ export default function EventCarousel({ cardNum }) {
               filter: getBlurForCard(index),
             }}
           >
-            <EventCard />
+            <EventCard type="upcoming" eventData={events[index]} />
           </div>
         ))}
         <div className="shrink-0 w-[825px] h-[486px]" />

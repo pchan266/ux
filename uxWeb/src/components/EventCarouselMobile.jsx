@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import EventCard from "./EventCardMobile";
 import "../styles/events.css";
 
-export default function EventCarousel({ cardNum }) {
+export default function EventCarousel({ cardNum, events = [] }) {
   const containerRef = useRef(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
@@ -61,7 +61,7 @@ export default function EventCarousel({ cardNum }) {
             key={index}
             className="shrink-0 w-[300px] h-[555px] transition-all duration-200"
           >
-            <EventCard />
+            <EventCard eventData={events[index]} />
           </div>
         ))}
         

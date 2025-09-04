@@ -2,7 +2,7 @@ import { useState } from "react";
 import EventCard from "./EventCard";
 import "../styles/events.css";
 
-export default function EventCarouselDouble({ cardNum }) {
+export default function EventCarouselDouble({ cardNum, events = [] }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const cardWidth = 433;
   const gap = 100;
@@ -94,7 +94,7 @@ export default function EventCarouselDouble({ cardNum }) {
                   opacity: getOpacityForCard(index)
                 }}
               >
-                <EventCard type="previous" />
+                <EventCard type="previous" eventData={events[index]} />
               </div>
             ))}
           </div>

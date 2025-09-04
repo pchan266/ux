@@ -1,0 +1,96 @@
+{
+  "upcoming": [
+    {
+      "title": "Workshops",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-02-15",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Workshops",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-02-22",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Workshops",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-03-01",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Workshops",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-03-08",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Workshops",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-03-15",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    }
+  ],
+  "previous": [
+    {
+      "title": "Events",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-01-15",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Events",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-01-22",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Events",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-01-29",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Events",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-02-01",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    },
+    {
+      "title": "Events",
+      "subtitle": "Intro to Figma",
+      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2024-02-08",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "imageGallery": []
+    }
+  ]
+}

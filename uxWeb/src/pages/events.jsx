@@ -6,6 +6,7 @@ import MobileEventCarousel from "../components/EventCarouselMobile";
 import UpcomingEventCarousel from "../components/EventCarouselSingle";
 import MiniNavbar from "../components/MiniNavbar";
 import CustomCursor from "../components/customCursor";
+import eventsData from "../data/events.json";
 import "../styles/events.css";
 
 
@@ -51,9 +52,9 @@ export default function Events () {
                 <div className="flex items-center justify-center mt-[59px]">
                     
                     {isMobile ? (
-                        <MobileEventCarousel cardNum={5} />
+                        <MobileEventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
                     ) : (
-                        <UpcomingEventCarousel cardNum={7} />
+                        <UpcomingEventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
                     )}
                 </div>
             </section>
@@ -61,9 +62,9 @@ export default function Events () {
                 <h2 className="event-category-title">Previous {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
                     {isMobile ? (
-                        <MobileEventCarousel cardNum={5} />
+                        <MobileEventCarousel cardNum={eventsData.previous.length} events={eventsData.previous} />
                     ) : (
-                        <PrevEventCarousel cardNum={8} type="previous" />
+                        <PrevEventCarousel cardNum={eventsData.previous.length} events={eventsData.previous} />
                     )}
                 </div>
             </section>
