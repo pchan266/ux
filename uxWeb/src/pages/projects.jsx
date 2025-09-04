@@ -18,6 +18,7 @@ function Projects() {
 
     return (
         <div className="project-main-container"> 
+        <title>Projects - Queen's UX Club</title>
         <CustomCursor />
             <section className="mb-[33px] " data-aos="fade-right">
                 <h1 className="md:h-[75px]   h-[50px]">Projects</h1>

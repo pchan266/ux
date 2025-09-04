@@ -14,6 +14,7 @@ export default function hackathon() {
 
   return (
     <div className="page-container-hackathon">
+      <title>Designation - Queen's UX Club</title>
           <CustomCursor />
 
       {/* Hero Section */}

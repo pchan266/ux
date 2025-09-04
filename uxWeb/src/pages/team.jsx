@@ -80,6 +80,7 @@ function Team() {
 
     return (
         <div className="pb-[10%]"> 
+        <title>Our Team - Queen's UX Club</title>
         <CustomCursor />
             <section className="mb-[33px] " data-aos="fade-right">
                 <h1 className="">Our Team</h1>

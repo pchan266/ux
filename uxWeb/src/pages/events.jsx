@@ -38,6 +38,7 @@ export default function Events () {
 
     return (
         <div className="min-h-[1330px] overflow-x-hidden" id="hero"  >
+            <title>Events - Queen's UX Club</title>
             <CustomCursor />
             <section className="mb-[33px]" data-aos="fade-right">
                 <h1>Events and Workshops</h1>

@@ -8,6 +8,7 @@ import { Outlet } from 'react-router-dom';
 export default function Layout() {
   return (
     <div >
+      <link rel="icon" href="ux.png" />
       <ScrollToTop />
       <Navbar />
       <MobileNavbar />

@@ -4,6 +4,7 @@ import "../styles/sponsorship.css"
 export default function Sponsor() {
     return (
         <>
+        <title>Sponsorship - Queen's UX Club</title>
             <CustomCursor />
             <section className="sponsors-hero">
                 <div className="container-sponsors" data-aos="fade-right">

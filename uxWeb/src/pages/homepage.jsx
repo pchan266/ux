@@ -39,6 +39,7 @@ export default function homepage() {
 
   return (
     <div>
+      <title>Queen's UX Club</title>
       <CustomCursor />
       {/* Hero Section */}
       <section className="hero">
