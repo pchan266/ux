@@ -13,9 +13,17 @@ export default function EventCard ({ type="upcoming", eventData }) {
                         <p className="event-description">
                             {eventData?.description}
                         </p>
-                   
+                        <a 
+                            href={eventData?.signupLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="event-btn mt-4 inline-block text-center"
+                        >
+                            Sign up
+                        </a>
                     </div>
                     <img src="../Group 10.svg" className="h-[311px] w-[374px]" alt="Event" draggable={false} />
+                    
             </div>
         )
     }

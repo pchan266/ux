@@ -7,6 +7,7 @@
       "date": "2024-02-15",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
+      "signupLink": "https://forms.gle/example1",
       "imageGallery": []
     },
     {
@@ -16,6 +17,7 @@
       "date": "2024-02-22",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
+      "signupLink": "https://forms.gle/example2",
       "imageGallery": []
     },
     {
@@ -25,6 +27,7 @@
       "date": "2024-03-01",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
+      "signupLink": "https://forms.gle/example3",
       "imageGallery": []
     },
     {
@@ -34,6 +37,7 @@
       "date": "2024-03-08",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
+      "signupLink": "https://forms.gle/example4",
       "imageGallery": []
     },
     {
@@ -43,6 +47,7 @@
       "date": "2024-03-15",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
+      "signupLink": "https://forms.gle/example5",
       "imageGallery": []
     }
   ],
