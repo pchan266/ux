@@ -8,6 +8,7 @@ import CustomCursor from "../components/customCursor"
 import "../styles/footer.css"
 import "../styles/header.css"
 import "../styles/homepage.css"
+import eventsData from "../data/events.json"
 import { Link } from "react-router-dom"
 
 export default function homepage() {
@@ -184,11 +185,11 @@ export default function homepage() {
           </div>
 
           {isMobile ? (
-            <MobileEventCarousel cardNum={5} />
+            <MobileEventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
           ) : (
             <div className="events-carousel-wrapper-homepage">
               <div className="events-carousel-hmpg-inner">
-                <EventCarousel cardNum={5} />
+                <EventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
               </div>
             </div>
           )}

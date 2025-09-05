@@ -2,6 +2,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react"
 import CustomCursor from "../components/customCursor"
+import eventsData from "../data/events.json";
 import "../styles/hackathon.css"
 
 export default function hackathon() {
