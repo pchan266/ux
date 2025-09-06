@@ -50,15 +50,25 @@ export default function Events () {
             <section data-aos="fade-left">
                 <h2 className="event-category-title">Upcoming {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
-                    
-                    {isMobile ? (
+                    {/* Temporarily hidden - show "Coming Soon" instead */}
+                    {false && (isMobile ? (
                         <MobileEventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
                     ) : (
                         <UpcomingEventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
-                    )}
+                    ))}
+                    
+                    {/* Coming Soon message */}
+                    <div className="py-20 flex flex-col items-center justify-center">
+                        <div className="text-center">
+                            <h3 className="text-4xl font-semibold text-gray-700 mb-4">Coming Soon</h3>
+                            <p className="text-lg text-gray-500 max-w-md">
+                                We're working on some exciting events and workshops. Stay tuned for updates!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section className="mb-[244px]" data-aos="fade-up">
+            <section className="xl:mb-[10rem]" data-aos="fade-up">
                 <h2 className="event-category-title">Previous {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
                     {isMobile ? (

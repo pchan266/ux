@@ -61,6 +61,7 @@ export default function MobileNavbar() {
                     </div>
                     
                     <nav className="mobile-nav-links">
+                        <Link to="/" onClick={closeMenu}>Home</Link>
                         <Link to="/team" onClick={closeMenu}>Our Team</Link>
                         <Link to="/events" onClick={closeMenu}>Events</Link>
                         <Link to="/hackathon" onClick={closeMenu}>Designathon</Link>

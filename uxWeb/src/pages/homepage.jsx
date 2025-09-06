@@ -184,7 +184,8 @@ export default function homepage() {
           </h2>
           </div>
 
-          {isMobile ? (
+          {/* Temporarily hidden - show "Coming Soon" instead */}
+          {false && (isMobile ? (
             <MobileEventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
           ) : (
             <div className="events-carousel-wrapper-homepage">
@@ -192,7 +193,17 @@ export default function homepage() {
                 <EventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
               </div>
             </div>
-          )}
+          ))}
+          
+          {/* Coming Soon message */}
+          <div className="py-20 flex flex-col items-center justify-center">
+            <div className="text-center">
+              <h3 className="text-4xl font-semibold text-gray-700 mb-4">Coming Soon</h3>
+              <p className="text-lg text-gray-500 max-w-md">
+                We're working on some exciting events and workshops. Stay tuned for updates!
+              </p>
+            </div>
+          </div>
           <Link to="/events">
             <a className="btn">
               See All Events
