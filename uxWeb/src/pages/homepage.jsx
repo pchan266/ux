@@ -177,7 +177,7 @@ export default function homepage() {
 
       {/* Upcoming Events Section */}
       <section className="events">
-        <div className="container-events justify-center overflow-x-visible">
+        <div className="container-events justify-center overflow-x-visible" data-aos="fade-up">
           <div className="upcoming-events-title-container">
           <h2 className="upcoming-events-title">
             Upcoming Events

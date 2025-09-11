@@ -237,11 +237,13 @@ main {
   line-height: 100%;
   letter-spacing: 0px;
 
+  text-align: center;
+
   background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  height: 100px;
+  height: 120px;
   width: 900px;
   white-space: nowrap;
 }
@@ -252,7 +254,7 @@ main {
 }
 .upcoming-events-title-container {
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 900px;
 }
 
 
@@ -304,7 +306,7 @@ main {
 
     /* Events Section */
     .upcoming-events-title-container {
-      max-width: 1800px !important;
+      max-width: 1400px !important;
       padding: 0 0rem;
     }
     .upcoming-events-title {
@@ -343,13 +345,13 @@ main {
 
     /* Events Section */
     .upcoming-events-title-container {
-      max-width: 1700px;
+      max-width: 1400px;
       padding: 0 0rem;
     }
     .upcoming-events-title {
       font-size: 144px;
       width: 1400px;
-      height: 160px;
+      height: 180px;
     }
     .events-carousel-wrapper-homepage{
       margin-top: 50px;
@@ -398,8 +400,7 @@ main {
 
   /* Events Section */
   .upcoming-events-title-container {
-    max-width: 1040px;
-    padding: 0 2rem;
+    max-width: 900px;
   }
   .upcoming-events-title {
     font-size: 96px;
@@ -491,7 +492,7 @@ main {
 
   /* Events Section */
   .upcoming-events-title-container {
-    max-width: 768px;
+    max-width: 620px;
   }
   .upcoming-events-title {
     font-size: 72px;
@@ -590,7 +591,7 @@ main {
 
   /* Events Section */
   .upcoming-events-title-container {
-    max-width: 480px;
+    max-width: 260px;
     height: 100px;
   }
   .upcoming-events-title {
@@ -664,7 +665,7 @@ main {
     padding-top: 0rem;
   }
   .upcoming-events-title-container {
-    max-width: 375px;
+    max-width: 260px;
     padding: 0 0rem;
   }
   .upcoming-events-title {
@@ -710,7 +711,7 @@ main {
 
   /* Events Section */
   .upcoming-events-title-container {
-    max-width: 320px;
+    max-width: 180px;
     padding: 0 0rem;
   }
   .upcoming-events-title {
@@ -760,7 +761,7 @@ main {
 
   /* Events Section */
   .upcoming-events-title-container {
-    max-width: 280px;
+    max-width: 140px;
     padding: 0 0rem;
     text-wrap: wrap;
   }
