@@ -66,6 +66,7 @@ function Team() {
             {name: "Katrina Jin", role: "Executive", image: "/headshots/hackathon/katrina.JPG"},
             {name: "Elrich Ka Lung Chen", role: "Executive", image: "/headshots/hackathon/elrich.jpg"},
             {name: "Manreet Gill", role: "Executive", image: "/headshots/hackathon/Manreet.jpeg"},
+            {name: "Kevin Valencia", role: "Executive", image: "/headshots/hackathon/Kevin_Valencia.png"}
         ],
         website: [
             {name: "Keenan Yang", role: "Executive", image: "/headshots/website/Keenan.jpg"},
