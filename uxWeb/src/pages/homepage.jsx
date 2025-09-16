@@ -50,7 +50,7 @@ export default function homepage() {
           <div className="hero-content" data-aos="fade-right">
             <div className="hero-top">
               <h1 className="hero-title">
-                Queen's
+                Queen's 
                 <br />
                 UX Club
               </h1>
