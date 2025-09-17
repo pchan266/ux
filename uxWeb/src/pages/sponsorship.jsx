@@ -1,5 +1,8 @@
+import { ArrowUpRight } from "lucide-react"
+import { Link } from "react-router-dom"
 import CustomCursor from "../components/customCursor"
 import "../styles/sponsorship.css"
+
 
 export default function Sponsor() {
     return (
@@ -10,10 +13,12 @@ export default function Sponsor() {
                 <div className="container-sponsors" data-aos="fade-right">
                     <h1 className="sponsors-title">Sponsors</h1>
                     <p className="red-text">Thank you to all of our sponsors who support our team</p>
-                    <a href="#" className="btn">
-                        Become a Sponsor
-                        <span className="arrow">↗</span>
-                    </a>
+                    <Link to="mailto:quxspons@gmail.com">
+                        <a className="btn">
+                            Become a Sponsor
+                            <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
+                        </a>
+                    </Link>
                 </div>
             </section>
             <section className="why-sponsor section">
@@ -63,7 +68,7 @@ export default function Sponsor() {
                         
                         <a href="#" className="btn">
                             Sponsorship Package
-                            <span className="arrow">↗</span>
+                            <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
                         </a>
                     </div>
                     

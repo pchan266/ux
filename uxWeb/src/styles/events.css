@@ -39,7 +39,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
+  padding: 5rem;
 }
 
 .event-category-title {
@@ -75,7 +75,7 @@
   border-width: 1px;
   border-radius:20px;
   width: 7rem;
-  height: 25px;
+  height: auto;
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
@@ -126,6 +126,8 @@
   .event-category-title {
     margin-left: 5%;
   }
+
+  
   .event-card {
     padding: 2rem !important;
   }

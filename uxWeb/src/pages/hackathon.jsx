@@ -1,9 +1,11 @@
-import AOS from "aos"
-import "aos/dist/aos.css"
-import { useEffect } from "react"
-import CustomCursor from "../components/customCursor"
-import eventsData from "../data/events.json";
-import "../styles/hackathon.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ArrowUpRight } from "lucide-react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import CustomCursor from "../components/customCursor";
+import "../styles/hackathon.css";
+
 
 export default function hackathon() {
   useEffect(() => {
@@ -79,8 +81,11 @@ export default function hackathon() {
               define our Designathon experience.
               </p>
             </div>
-
-            <div className="btn">Become a Sponsor →</div>
+            <Link to="mailto:quxspons@gmail.com">
+              <div className="btn">Become a Sponsor 
+              <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
+              </div>
+            </Link>
           </div>
         </div> 
       </section>
