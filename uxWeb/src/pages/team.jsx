@@ -64,7 +64,6 @@ function Team() {
         hackathon: [
             {name: "Teagan Wright", role: "Director", image: "/headshots/hackathon/Teagan.jpeg"},
             {name: "Katrina Jin", role: "Executive", image: "/headshots/hackathon/katrina.JPG"},
-            {name: "Elrich Ka Lung Chen", role: "Executive", image: "/headshots/hackathon/elrich.jpg"},
             {name: "Manreet Gill", role: "Executive", image: "/headshots/hackathon/Manreet.jpeg"},
             {name: "Kevin Valencia", role: "Executive", image: "/headshots/hackathon/Kevin_Valencia.png"}
         ],
