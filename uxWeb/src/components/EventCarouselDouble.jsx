@@ -116,7 +116,7 @@ export default function EventCarouselDouble({ cardNum, events = [] }) {
 
   // Don't render if we don't have events
   if (sortedEvents.length === 0) {
-    return <div className="relative w-full h-[559px] flex items-center justify-center">
+    return <div className="relative w-full h-[600px] flex items-center justify-center">
       <p className="text-gray-500">No events available</p>
     </div>;
   }
@@ -154,7 +154,7 @@ export default function EventCarouselDouble({ cardNum, events = [] }) {
             {displayEvents.map((event, index) => (
               <div
                 key={`${event.title}-${event.date}-${index}`}
-                className="shrink-0 w-[433px] h-[559px] transition-all duration-500 select-none"
+                className="shrink-0 w-[433px] h-[620px] transition-all duration-500 select-none"
                 style={{ 
                   filter: getBlurForCard(index),
                   opacity: getOpacityForCard(index)

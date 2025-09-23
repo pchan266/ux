@@ -2,13 +2,23 @@
   "events": [
     {
       "title": "Workshops",
+      "subtitle": "What is Research?",
+      "description": "This session will introduce key research methods, strategies for exploring topics, and techniques for asking stronger questions to guide research processes. Led by Sina, the workshop will also feature an interactive Kahoot quiz with opportunities to win small prizes. This will be a casual session with many opportunities to ask questions.",
+      "date": "2024-09-22",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "signupLink": "https://forms.gle/example1",
+      "imageGallery": ["events/week3event.jpg"]
+    },
+    {
+      "title": "Workshops",
       "subtitle": "Intro to Figma",
       "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
       "date": "2025-02-15",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
       "signupLink": "https://forms.gle/example1",
-      "imageGallery": []
+      "imageGallery": ["Group 10.svg"]
     }
   ]
 }

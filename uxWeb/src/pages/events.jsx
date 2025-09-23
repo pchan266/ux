@@ -93,7 +93,7 @@ export default function Events () {
                     </div>
                 </div>
             </section>
-            <section className="xl:mb-[10rem]" data-aos="fade-up">
+            <section className="pb-[5%]" data-aos="fade-up">
                 <h2 className="event-category-title">Previous {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
                     {isMobile ? (
