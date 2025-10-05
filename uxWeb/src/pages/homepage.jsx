@@ -2,14 +2,15 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import { ArrowUpRight } from "lucide-react"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+import VanillaTilt from 'vanilla-tilt'
 import MobileEventCarousel from "../components/EventCarouselMobile"
 import EventCarousel from "../components/EventCarouselSingle"
 import CustomCursor from "../components/customCursor"
+import eventsData from "../data/events.json"
 import "../styles/footer.css"
 import "../styles/header.css"
 import "../styles/homepage.css"
-import eventsData from "../data/events.json"
-import { Link } from "react-router-dom"
 
 export default function homepage() {
   const [showCreativityText, setShowCreativityText] = useState(false);
@@ -18,6 +19,7 @@ export default function homepage() {
   const [showInclusivityText, setShowInclusivityText] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  //UseEffect hook for AOS animation (slide in)
   useEffect(() => {
       AOS.init({
         duration: 1000,
@@ -35,6 +37,30 @@ export default function homepage() {
       checkMobile();
       window.addEventListener("resize", checkMobile);
       return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  //UseEffect hook for VanillaTilt animation
+  useEffect(() => {
+    //disable tilt on mobile
+    const tiltEnable = typeof window !== "undefined" && window.innerWidth > 1024;
+
+    if (!tiltEnable) return;
+
+    const cards = document.querySelectorAll(".value-card");
+    VanillaTilt.init(cards, {
+      max: 15,
+      perspective: 1400,
+      easing: "cubic-bezier(.03,.98,.52,.9)",
+      speed: 1200,
+      glare: true,
+      "max-glare": 0.2,
+      scale: 1.04,
+      gyroscope: false
+    });
+
+    return () => {
+      cards.forEach((el) => el.vanillaTilt?.destroy());
+    };
   }, []);
 
 
@@ -100,7 +126,9 @@ export default function homepage() {
           </h2>
 
           <div className="values-grid">
-            <div className="card value-card creativity" onClick={() => setShowCreativityText(!showCreativityText)}>
+          <div className={`value-card-inner ${showCreativityText ? "flipped" : ""}`}>
+            <div className="card value-card creativity" onClick={() => setShowCreativityText(v => !v)}>
+            
             <h3 className="value-title">Creativity</h3>
              { showCreativityText ? (
               <p className="value-description">
@@ -115,7 +143,9 @@ export default function homepage() {
               )
             }
             </div>
+            </div>
 
+            <div className="value-card-inner">
             <div className="card value-card empathy" onClick={() => setShowEmpathyText(!showEmpathyText)}>
 
               <h3 className="value-title">Empathy</h3>
@@ -132,7 +162,9 @@ export default function homepage() {
             )
             }
             </div>
+            </div>
 
+            <div className="value-card-inner">
             <div className="card value-card curiosity" onClick={() => setShowCuriosityText(!showCuriosityText)}>
 
               <h3 className="value-title">Curiosity</h3>
@@ -149,7 +181,9 @@ export default function homepage() {
             )
             }
             </div>
+            </div>
 
+            <div className="value-card-inner">
             <div className="card value-card inclusivity" onClick={() => setShowInclusivityText(!showInclusivityText)}>
               
               <h3 className="value-title">Inclusivity</h3>
@@ -165,6 +199,7 @@ export default function homepage() {
               </>
             )
             }
+            </div>
             </div>
           </div>
           <a href="/team" className="meet-team-btn">

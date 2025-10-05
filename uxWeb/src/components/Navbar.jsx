@@ -10,6 +10,7 @@ export default function Navbar() {
                 </a>
             </div>
             <div className="nav-links">
+                <Link to="/">Home</Link>
                 <Link to="/team">Our Team</Link>
                 <Link to="/events">Events</Link>
                 <Link to="/hackathon">Designathon</Link>
