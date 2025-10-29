@@ -19,14 +19,16 @@
   margin-right: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  max-width: 1920px;
 }
 
 
 @media (max-width: 2000px) {
   .executive-row {
     gap: 66.93px;
-    width: 80%;
+    width: auto;
     margin-bottom: 66.93px;
   }
 }

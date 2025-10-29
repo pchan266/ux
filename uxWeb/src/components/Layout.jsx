@@ -7,12 +7,12 @@ import { Outlet } from 'react-router-dom';
 
 export default function Layout() {
   return (
-    <div >
+    <div className="min-h-screen flex flex-col">
       <link rel="icon" href="ux.png" />
       <ScrollToTop />
       <Navbar />
       <MobileNavbar />
-      <main >
+      <main className="flex-1">
         <Outlet /> 
       </main>
       <Footer />
