@@ -7,7 +7,9 @@ export default function MemberCard({ name, role, headshot }) {
                         <img
                             className="headshot"
                             src={headshot}
-                            loading="lazy"
+                            loading="eager"
+                            decoding="async"
+                            fetchpriority="high"
                         />
                     )}
                 </div>

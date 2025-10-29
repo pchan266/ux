@@ -107,7 +107,23 @@ function Team() {
 
     }
     
-    
+
+    // Preload all team headshots once to avoid flicker when switching
+    useEffect(() => {
+        const urls = new Set();
+        Object.values(teamData).forEach(list => {
+            list.forEach(m => urls.add(m.image));
+        });
+        urls.forEach((url) => {
+            const img = new Image();
+            img.decoding = 'async';
+            img.src = url;
+            if (img.decode) {
+                img.decode().catch(() => {});
+            }
+        });
+    }, []);
+
     // Derive layout metrics for responsive vertical spacing based on rows
     const execRows = getExecutiveRows(teamData[selected]);
     const directorCount = teamData[selected].filter(m => m.role.endsWith("Director")).length;
