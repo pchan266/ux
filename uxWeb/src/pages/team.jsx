@@ -1,9 +1,9 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import Dropdown from "../components/Dropdown";
 import MemberCard from "../components/MemberCard";
 import MiniNavbar from "../components/MiniNavbar";
-import Dropdown from "../components/Dropdown";
 import CustomCursor from "../components/customCursor";
 import "../styles/team.css";
 
