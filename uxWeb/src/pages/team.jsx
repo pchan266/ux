@@ -101,7 +101,7 @@ function Team() {
             {name: "Keenan Yang", role: "Executive", image: "/headshots/website/Keenan.jpg"},
             {name: "Serena Sanchez", role: "Executive", image: "/headshots/website/Serena.jpg"},
             {name: "Daniel Vargas", role: "Executive", image: "/headshots/website/Daniel.jpg"},
-            {name: "Mukitur Rahman", role: "Executive", image: "/headshots/website/Mukitur.jpg"}
+            {name: "Mukit Rahman", role: "Executive", image: "/headshots/website/Mukitur.jpg"}
         ]
 
 
