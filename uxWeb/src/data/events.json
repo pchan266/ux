@@ -1,9 +1,22 @@
 {
   "events": [
+    
+    {
+      "title": "Workshops",
+      "subtitle": "Intro to Figma",
+      "descriptionPresent": "Learn how to use Figma to design wireframes and prototypes from scratch. By the end, you'll have hands-on experience and a basic project to show off!",
+      "descriptionPast": "Students learned how to use Figma to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
+      "date": "2025-02-15",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Engineering Building, Room 201",
+      "signupLink": "https://forms.gle/example1",
+      "imageGallery": ["Group 10.svg"]
+    },
     {
       "title": "Workshops",
       "subtitle": "What is Research?",
-      "description": "This session will introduce key research methods, strategies for exploring topics, and techniques for asking stronger questions to guide research processes. Led by Sina, the workshop will also feature an interactive Kahoot quiz with opportunities to win small prizes. This will be a casual session with many opportunities to ask questions.",
+      "descriptionPresent": "This session introduces key research methods, strategies for exploring topics, and techniques for asking stronger questions to guide your research. Led by Sina, the workshop includes an interactive Kahoot quiz with opportunities to win small prizes. It’s a casual session with plenty of opportunities to ask questions.",
+      "descriptionPast": "This session introduced key research methods, strategies for exploring topics, and techniques for asking stronger questions to guide research. Led by Sina, the workshop featured an interactive Kahoot quiz with opportunities to win small prizes. It was a casual session with many opportunities to ask questions.",
       "date": "2024-09-22",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
@@ -12,13 +25,47 @@
     },
     {
       "title": "Workshops",
-      "subtitle": "Intro to Figma",
-      "description": "Our first workshop introduced students to Figma, where they learned to design wireframes and prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!",
-      "date": "2025-02-15",
+      "subtitle": "From Data to Insight",
+      "descriptionPresent": "Explore how to identify patterns when analyzing data and transform findings into meaningful insights. This interactive session, led by Sina, will include activities like Kahoot, prizes, and guided slides.",
+      "descriptionPast": "Participants explored how to identify patterns when analyzing data and transform findings into meaningful insights. This interactive session, led by Sina, included activities like Kahoot, prizes, and guided slides.",
+      "date": "2024-10-06",
       "time": "6:00 PM - 8:00 PM",
-      "location": "Engineering Building, Room 201",
-      "signupLink": "https://forms.gle/example1",
-      "imageGallery": ["Group 10.svg"]
+      "location": "Goodes Hall, Rm 302",
+      "signupLink": "https://forms.gle/example2",
+      "imageGallery": ["events/2025-10-06.png"]
+    },
+    {
+      "title": "Events",
+      "subtitle": "Coffee Chat + Fireside Panel",
+      "descriptionPresent": "Join Sarah Nabil and guest speakers from both academia and industry for a relaxed, podcast-style panel discussion. The conversation will be open, thoughtful, and easy to follow, with opportunities for you to submit questions via Slido—anonymously if preferred. Slides will provide speaker introductions, the Slido QR code, and wrap-up notes.",
+      "descriptionPast": "Attendees joined Sarah Nabil and guest speakers from both academia and industry for a relaxed, podcast-style panel discussion. The conversation was open, thoughtful, and easy to follow, with opportunities to submit questions via Slido—anonymously if preferred. Slides provided speaker introductions, the Slido QR code, and wrap-up notes.",
+      "date": "2024-10-05",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Goodes Hall, Rm 302",
+      "signupLink": "https://forms.gle/example3",
+      "imageGallery": ["events/2025-10-30.png"]
+    },
+    {
+      "title": "Workshops",
+      "subtitle": "Let’s Talk Interviews (Part 1)",
+      "descriptionPresent": "Learn how to conduct effective interviews. We’ll discuss different interview types, how to prepare, and best practices for engaging with participants. You’ll also have the opportunity to run a short, informal interview on a topic of your choice.",
+      "descriptionPast": "This session focused on how to conduct effective interviews. We discussed different interview types, how to prepare, and best practices for engaging with participants. Attendees also had the opportunity to run a short, informal interview on a topic of their choice.",
+      "date": "2024-09-29",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Goodes Hall, Rm 302",
+      "signupLink": "https://forms.gle/example4",
+      "imageGallery": ["events/2025-09-29.png"]
+    },
+    {
+      "title": "Workshops",
+      "subtitle": "Figma Prototypes",
+      "descriptionPresent": "For those already familiar with the basics, this session focuses on creating interactive prototypes and using advanced Figma features. We’ll also cover best practices for collaboration and effectively sharing your work.",
+      "descriptionPast": "For those already familiar with the basics, this session focused on creating interactive prototypes and using advanced Figma features. We also covered best practices for collaboration and effectively sharing work.",
+      "date": "2024-10-27",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Goodes Hall, Rm 302",
+      "signupLink": "https://forms.gle/example7",
+      "imageGallery": ["events/2025-10-27.png"]
     }
   ]
 }

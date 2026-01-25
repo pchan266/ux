@@ -2,20 +2,32 @@ import "../styles/events.css"
 import { useState } from "react"
 
 export default function EventCard ({ type="upcoming", eventData }) {
+
     const [isExpanded, setIsExpanded] = useState(false)
-    
+
+    // Automatically detect if event is in the past
+    const isPastEvent = new Date(eventData?.date) < new Date()
+
+    // Pick correct description
+    const eventDescription = isPastEvent
+        ? eventData?.descriptionPast
+        : eventData?.descriptionPresent
+
     // Character threshold for showing "read more"
     const CHAR_THRESHOLD = 200
-    
-    // Function to get truncated text
+
+    // Helper: truncate text
     const getTruncatedText = (text) => {
         if (!text) return ""
-        return text.length > CHAR_THRESHOLD ? text.substring(0, CHAR_THRESHOLD) + "..." : text
+        return text.length > CHAR_THRESHOLD
+        ? text.substring(0, CHAR_THRESHOLD) + "..."
+        : text
     }
-    
-    // Check if text needs truncation
-    const needsTruncation = eventData?.description && eventData.description.length > CHAR_THRESHOLD
-    const displayText = isExpanded ? eventData?.description : getTruncatedText(eventData?.description)
+
+    // Determine whether to truncate
+    const needsTruncation = eventDescription && eventDescription.length > CHAR_THRESHOLD
+    const displayText = isExpanded ? eventDescription : getTruncatedText(eventDescription)
+   
 
     if (type == "upcoming") {
         return (
@@ -49,7 +61,7 @@ export default function EventCard ({ type="upcoming", eventData }) {
                             Sign up
                         </a>
                     </div>
-                    <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="h-[311px] w-[374px] rounded-2xl object-cover" alt="Event" draggable={false} />
+                    <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="event-image" alt="Event" draggable={false} />
                     
             </div>
         )
@@ -78,7 +90,7 @@ export default function EventCard ({ type="upcoming", eventData }) {
                     )}
                 </div>
             
-                <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="h-[311px] w-[374px] mt-4 mb-4 rounded-2xl object-cover" alt="Event" draggable={false} />
+                <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="event-image mt-4 mb-4" alt="Event" draggable={false} />
             </div>
             
         </div>

@@ -1,3 +1,15 @@
+/* events.css */
+
+/* =========================================
+   1. PAGE & LAYOUT STYLES (Unchanged)
+   ========================================= */
+:root {
+  --event-img-w: 374px;
+  --event-img-h: 311px;
+  --event-img-mobile-w: 175px;
+  --event-img-mobile-h: 175px;
+}
+
 .events {
   padding: 5rem 0;
   top: 240px;
@@ -5,35 +17,22 @@
 }
 
 .container-events {
-  
   margin: 0 auto;
   padding: 0 0rem;
   height: 100vh;
 }
 
-.no-scrollbar {
-  scrollbar-width: none;
-}
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.grabbing { cursor: grabbing; cursor: -webkit-grabbing; }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none; 
-}
-
-.grabbing {
-  cursor: grabbing;
-  cursor: -webkit-grabbing;
-}
-
-
-
-
+/* =========================================
+   2. EVENT CARD STYLES (Unchanged)
+   ========================================= */
 .event-card {
   background: #FFFCF5;
   border-radius: 50px;
-  box-shadow: 
-    20px 20px 30px 0px #98979580,
-    -20px -20px 30px 0px #FFFFFF;
-
+  box-shadow: 20px 20px 30px 0px #98979580, -20px -20px 30px 0px #FFFFFF;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -42,202 +41,125 @@
   padding: 3rem 4rem;
 }
 
-.event-category-title {
-  margin-top: 94px;
-  margin-left: 139px;
-}
-
-.event-upcoming-content {
-  padding-right: 2rem;
-  
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.event-prev-content {
-  width: 386px;
-  height: 452px;
-  display: flex;
-  flex-direction: column;
-
-  justify-content: space-between;
-}
+.event-category-title { margin-top: 94px; margin-left: 139px; }
+.event-upcoming-content { padding-right: 2rem; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; }
+.event-prev-content { width: 386px; height: 452px; display: flex; flex-direction: column; justify-content: space-between; }
 
 .event-btn {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-color: #00022B;
-  border-width: 1px;
-  border-radius:20px;
-  width: 7rem;
-  height: auto;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  background-color: transparent;
-  transition: background-color 0.2s ease;
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-  text-align: center;
+  padding: 5px 15px; border-color: #00022B; border-width: 1px; border-radius: 20px;
+  width: 7rem; height: auto; font-weight: 600; font-size: 14px; line-height: 100%;
+  background-color: transparent; transition: background-color 0.2s ease;
+  text-decoration: none; color: inherit; display: inline-block; text-align: center;
 }
+.event-btn:hover { background-color: rgba(0, 2, 43, 0.1); }
+.event-btn:active { background-color: rgba(0, 2, 43, 0.2); }
 
-.event-btn:hover {
-  background-color: rgba(0, 2, 43, 0.1);
-}
+.event-title { font-size: 32px; font-weight: 600; font-family: "BR Firma", sans-serif; line-height: 100%; margin-bottom: 0.75rem; }
+.event-title-colour { background: linear-gradient(to right, #A3280C, #657F95); background-clip: border-box; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.event-btn:active {
-  background-color: rgba(0, 2, 43, 0.2);
-}
+.event-description-container { display: flex; flex-direction: column; gap: 0.5rem; }
+.event-description-scrollable { max-height: 120px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #A3280C #f0f0f0; }
+.event-description-scrollable::-webkit-scrollbar { width: 6px; }
+.event-description-scrollable::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 3px; }
+.event-description-scrollable::-webkit-scrollbar-thumb { background: #A3280C; border-radius: 3px; }
+.event-description-scrollable::-webkit-scrollbar-thumb:hover { background: #657F95; }
+.event-description { font-family: "BR Firma", sans-serif; font-size: 14px; font-weight: 400; line-height: 120%; color: #000000; margin: 0; padding-right: 8px; }
 
-.event-title {
-  font-size: 32px;
-  font-weight: 600;
-  font-family: "BR Firma", sans-serif;
-  line-height: 100%;
-  letter-spacing: 0px;
-  margin-bottom: 0.75rem;
-}
+.read-more-btn { background: none; border: none; color: #A3280C; font-family: "BR Firma", sans-serif; font-size: 12px; font-weight: 600; cursor: pointer; text-align: left; padding: 0; transition: color 0.2s ease; align-self: flex-start; }
+.read-more-btn:hover { color: #657F95; }
 
-.event-title-colour {
-  background: linear-gradient(to right, #A3280C, #657F95);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+.event-description-scrollable-mobile { max-height: 150px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #A3280C #f0f0f0; flex: 1; }
+.event-image { width: var(--event-img-w); height: var(--event-img-h); object-fit: cover; object-position: center; border-radius: 1rem; }
+.event-image-mobile { width: var(--event-img-mobile-w); height: var(--event-img-mobile-h); object-fit: cover; object-position: center; border-radius: 1rem; }
 
-.event-description-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.event-description-scrollable {
-  max-height: 120px; /* Fixed height to prevent card expansion */
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #A3280C #f0f0f0;
-}
-
-.event-description-scrollable::-webkit-scrollbar {
-  width: 6px;
-}
-
-.event-description-scrollable::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 3px;
-}
-
-.event-description-scrollable::-webkit-scrollbar-thumb {
-  background: #A3280C;
-  border-radius: 3px;
-}
-
-.event-description-scrollable::-webkit-scrollbar-thumb:hover {
-  background: #657F95;
-}
-
-.event-description-scrollable.expanded {
-  max-height: 120px; /* Same fixed height when expanded */
-}
-
-.event-description-scrollable.collapsed {
-  max-height: 120px; /* Same fixed height when collapsed */
-}
-
-.event-description {
-  font-family: "BR Firma", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: 0px;
-  color: #000000;
-  margin: 0;
-  padding-right: 8px; /* Space for scrollbar */
-}
-
-.read-more-btn {
-  background: none;
-  border: none;
-  color: #A3280C;
-  font-family: "BR Firma", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: left;
-  padding: 0;
-  transition: color 0.2s ease;
-  align-self: flex-start;
-}
-
-.read-more-btn:hover {
-  color: #657F95;
-}
-
-.read-more-btn:active {
-  color: #A3280C;
-}
-
-/* Mobile specific styles */
-.event-description-scrollable-mobile {
-  max-height: 150px; /* Fixed height for mobile cards */
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #A3280C #f0f0f0;
-  flex: 1;
-}
-
-.event-description-scrollable-mobile::-webkit-scrollbar {
-  width: 4px;
-}
-
-.event-description-scrollable-mobile::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 2px;
-}
-
-.event-description-scrollable-mobile::-webkit-scrollbar-thumb {
-  background: #A3280C;
-  border-radius: 2px;
-}
-
-.event-description-scrollable-mobile::-webkit-scrollbar-thumb:hover {
-  background: #657F95;
-}
-
-.event-description-scrollable-mobile.expanded {
-  max-height: 150px; /* Same fixed height when expanded */
-}
-
-.event-description-scrollable-mobile.collapsed {
-  max-height: 150px; /* Same fixed height when collapsed */
-}
-
+/* =========================================
+   3. MEDIA QUERIES (Unchanged)
+   ========================================= */
 @media (max-width: 1000px) {
-  .event-category-title {
-    margin-left: 5%;
-  }
-
-  
-  .event-card {
-    padding: 2rem !important;
-  }
-  .container-events {
-  
-    margin: 0 auto;
-    padding: 0 0rem;
-    height: 90vh;
-  }
+  .event-category-title { margin-left: 5%; }
+  .event-card { padding: 2rem !important; }
+  .container-events { margin: 0 auto; padding: 0; height: 90vh; }
+}
+@media (min-width: 2700px) {
+  .event-category-title { margin-left: 20%; }
 }
 
-@media (min-width: 2700px) {
-  .event-category-title {
-    margin-left: 20%;
-  }
+/* =========================================
+   4. FINAL CORRECTED EMBLA STYLES
+   ========================================= */
+.embla {
+  --slide-width: 433px;
+  --slide-gap: 100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* CLEANER LAYOUT: Use gap property instead of margin hacks */
+.embla__container {
+  display: flex;
+  gap: var(--slide-gap); /* Defines the 100px space between slides */
+  touch-action: pan-y pinch-zoom;
+  height: auto;
+  user-select: none;
+}
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-width); /* Defines the 433px width of each slide */
+  min-width: 0;
+  /* No padding-left needed here anymore */
+  position: relative;
+  
+  /* --- VISUAL STATES --- */
+  transition: opacity 0.4s ease-in-out, filter 0.4s ease-in-out;
+  
+  /* State 1: Default (Blurred / Side cards) */
+  opacity: 0.3;
+  filter: blur(8px);
+  z-index: 1;
+  /* Fixes an issue where blurred elements can capture clicks */
+  pointer-events: none; 
+}
+
+/* State 2: Fully Visible (The two center cards) */
+/* The JS threshold of 1.0 ensures this only applies when 100% visible */
+.embla__slide.is-in-view {
+  opacity: 1;
+  filter: blur(0px);
+  z-index: 10;
+  pointer-events: auto;
+}
+
+/* --- BUTTONS --- */
+.embla-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.embla-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.embla-btn:disabled {
+  opacity: 0;
+  pointer-events: none;
 }

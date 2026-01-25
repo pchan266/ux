@@ -20,7 +20,7 @@ export default function EventCard ({ type="upcoming", eventData }) {
     return (
         <div className={`event-card w-[300px] h-[450px]`}>
             <div className="flex flex-col h-full">
-                <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="w-[175px] rounded-2xl object-cover" alt="Event" draggable={false} />
+                <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="event-image-mobile" alt="Event" draggable={false} />
                 <h3 className="event-title !text-[20px] mt-4"> 
                     <span className="event-title-colour">{eventData?.title}</span> <br />
                     {eventData?.subtitle}
