@@ -51,12 +51,14 @@ function Team() {
     
 
     const navOptions = [
-        {label: "Co-Founders", value: "cofounders"},
+        {label: "Co-Chairs", value: "cochairs"},
+        {label: "Website", value: "website"},
         {label: "Sponsorships", value: "sponsorships"},
         {label: "Marketing", value: "marketing"},
         {label: "Events", value: "events"},
-        {label: "Hackathon", value: "hackathon"},
-        {label: "Website", value: "website"}
+        {label: "Hackathon", value: "hackathon"}, 
+        {label: "Founders", value: "cofounders"},
+        
     ];
 
     const teamData = {
@@ -66,42 +68,41 @@ function Team() {
             {name: "Amanda Li", role: "", image: "/headshots/cofounders/Amanda.jpg"},
             {name: "Noah Yu", role: "", image: "/headshots/cofounders/Noah.jpg"}
         ],
+        cochairs: [
+            {name: "Phoebe Chan", role: "", image: "/headshots/cochairs/Phoebe_Chan.jpg"},
+            {name: "Shillisa Chapagain", role: "", image: "/headshots/cochairs/Shillisa_Chapagain.jpg"},
+            {name: "Tracy Chan", role: "", image: "/headshots/cochairs/Tracy_Chan.jpg"},
+        ],
         sponsorships: [
-            {name: "Jason Wu", role: "Director", image: "/headshots/sponsorship/Jason.jpg"},
-            {name: "Hayden Shalinksy", role: "Executive", image: "/headshots/sponsorship/Hayden.jpg"},
-            {name: "Bianca Rotariu", role: "Executive", image: "/headshots/sponsorship/Bianca.jpg"},
-            {name: "Ivan Bardziyan", role: "Executive", image: "/headshots/sponsorship/IvanBardziyanHeadshot.jpg"},
+            {name: "Basma Azeem", role: "Director", image: "/headshots/sponsorship/Basma_Azeem.jpg"},
+
         ],
         marketing: [
-            {name: "Gabriel Soler", role: "Director", image: "/headshots/marketing/Gabriel(Gabe)_Soler.jpg"},
-            {name: "Cheuk Chi Chan", role: "Executive", image: "/headshots/marketing/Cheuk_Chi_Chan(Tracy).jpg"},
-            {name: "Phoebe Chan", role: "Executive", image: "/headshots/marketing/Phoebe_Chan.jpg"},
-            {name: "Hailey Tien", role: "Executive", image: "/headshots/marketing/Hailey_Tien.jpg"},
-            {name: "Jack Chen", role: "Executive", image: "/headshots/marketing/Jack_Chen.jpg"},
-            {name: "Karelle Ngakam Samashi", role: "Executive", image: "/headshots/marketing/Karelle_Ngakam_Samashi.jpg"},
-            {name: "Ron Prrenjasi", role: "Executive", image: "/headshots/marketing/Ron Prrenjasi.jpg"},
-            {name: "Latha Suvarna", role: "Executive", image: "/headshots/marketing/Latha Suvarna.jpg"}
+            {name: "Ron Prrenjasi", role: "Director", image: "/headshots/marketing/Ron_Prrenjasi.jpg"},
+            {name: "Aun Ali", role: "Executive", image: "/headshots/marketing/Aun_Ali.jpeg"},
+            {name: "Riya Bangera", role: "Executive", image: "/headshots/marketing/Riya_Bangera.jpg"},
+            {name: "Sophie Liang", role: "Executive", image: "/headshots/marketing/Sophie_Liang.jpg"},
+            {name: "Kristina Vela", role: "Executive", image: "/headshots/marketing/Kristina_Vela.jpg"},
+
         ],
         events: [
-            {name: "Mabel Hong", role: "Director", image: "/headshots/events/Mabel.jpg"},
-            {name: "Dr. Sina Azimi", role: "UX Research Director", image: "/headshots/events/Dr. Sina Azimi.jpg"},
-            {name: "Lilyana Boraniev", role: "Research Executive", image: "/headshots/events/Lilyana.jpg"},
-            {name: "Shillisa Chapagain", role: "Executive", image: "/headshots/events/Shallisa.jpg"},
-            {name: "Simone Jiang", role: "Executive", image: "/headshots/events/Simone_.jpg"},
-            {name: "Jason Chen", role: "Executive", image: "/headshots/events/Jason.jpg"},
+            {name: "Jennifer Li", role: "Director", image: "/headshots/events/Jennifer_Li.jpg"},
+            {name: "Bill Tran", role: "Executive", image: "/headshots/events/Bill_Tran.jpg"},
+            {name: "Sydney Robinson", role: "Executive", image: "/headshots/events/Sydney_Robinson.jpeg"},
+            {name: "Nilaya Rimal", role: "Executive", image: "/headshots/events/Nilaya_Rimal.jpeg"},
         ],
         hackathon: [
-            {name: "Teagan Wright", role: "Director", image: "/headshots/hackathon/Teagan.jpg"},
-            {name: "Katrina Jin", role: "Executive", image: "/headshots/hackathon/katrina.JPG"},
-            {name: "Manreet Gill", role: "Executive", image: "/headshots/hackathon/Manreet.jpg"},
-            {name: "Kevin Valencia", role: "Executive", image: "/headshots/hackathon/Kevin_Valencia.jpg"},
-            {name: "Anah Merchant", role: "Executive", image: "/headshots/hackathon/Anah Merchant.jpg"}
+            {name: "Rounika Saxena", role: "Director", image: "/headshots/hackathon/rounika_saxena.jpeg"},
+            {name: "Darryl Brown", role: "Executive", image: "/headshots/hackathon/Darryl_Brown.jpeg"},
+            {name: "Gopika Batra", role: "Executive", image: "/headshots/hackathon/Gopika_Batra.jpeg"},
+            {name: "Henrique Sponchiado", role: "Executive", image: "/headshots/hackathon/Henrique_Silverio_Sponchiado.jpg"},
+            {name: "Kayla Burzese", role: "Executive", image: "/headshots/hackathon/Kayla_Burzese.PNG"}
         ],
         website: [
-            {name: "Keenan Yang", role: "Executive", image: "/headshots/website/Keenan.jpg"},
-            {name: "Serena Sanchez", role: "Executive", image: "/headshots/website/Serena.jpg"},
-            {name: "Daniel Vargas", role: "Executive", image: "/headshots/website/Daniel.jpg"},
-            {name: "Mukit Rahman", role: "Executive", image: "/headshots/website/Mukitur.jpg"}
+            {name: "Augustine Osezua", role: "Director", image: "/headshots/website/Augustine_Osezua.jpeg"},
+            {name: "Aryaman Bhatia", role: "Executive", image: "/headshots/website/Aryaman_Bhatia.JPG"},
+            {name: "Ivan Fang", role: "Executive", image: "/headshots/website/Ivan_Fang.jpg"},
+            {name: "Mariana Gonzalez", role: "Executive", image: "/headshots/website/Mariana_Gonzalez.jpeg"}
         ]
 
 
