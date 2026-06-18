@@ -51,13 +51,14 @@ function Team() {
     
 
     const navOptions = [
-        {label: "Co-Founders", value: "cofounders"},
         {label: "Co-Chairs", value: "cochairs"},
+        {label: "Website", value: "website"},
         {label: "Sponsorships", value: "sponsorships"},
         {label: "Marketing", value: "marketing"},
         {label: "Events", value: "events"},
-        {label: "Hackathon", value: "hackathon"},
-        {label: "Website", value: "website"}
+        {label: "Hackathon", value: "hackathon"}, 
+        {label: "Founders", value: "cofounders"},
+        
     ];
 
     const teamData = {
