@@ -27,14 +27,11 @@ export default function Events () {
         const data = eventsData.events;
         data.forEach(event => {
             const eventDate = new Date(event.date);
-            if (event?.imageGallery) {
-                if (eventDate >= today) {
-                    upcomingArr.push(event);
-                } else {
-                    previousArr.push(event);
-                }
+            if (eventDate >= today) {
+                upcomingArr.push(event);
+            } else {
+                previousArr.push(event);
             }
-
         });
 
         // Sort upcoming events by date (earliest first)

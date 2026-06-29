@@ -1,0 +1,49 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#F4F6F8"/>
+
+  <!-- Subtle dot grid pattern -->
+  <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.5" fill="#D0D8DF"/>
+  </pattern>
+  <rect width="800" height="500" fill="url(#dots)"/>
+
+  <!-- Center image icon -->
+  <g transform="translate(400, 220)">
+    <!-- Frame -->
+    <rect x="-54" y="-46" width="108" height="92" rx="10" fill="#DDE4E9" stroke="#8FB1BE" stroke-width="3"/>
+    <!-- Mountain shape inside frame -->
+    <polyline points="-38,28 -10,-12 14,12 30,-4 50,28" fill="#8FB1BE" opacity="0.5"/>
+    <!-- Sun circle -->
+    <circle cx="-22" cy="-18" r="10" fill="#D53302" opacity="0.7"/>
+  </g>
+
+  <!-- Label text -->
+  <text
+    x="400"
+    y="308"
+    font-family="Inter, Arial, sans-serif"
+    font-size="18"
+    font-weight="600"
+    fill="#00022B"
+    text-anchor="middle"
+    opacity="0.6"
+  >No Photo Available</text>
+
+  <!-- Subtle bottom accent bar -->
+  <rect x="0" y="490" width="800" height="10" rx="0">
+    <linearGradient id="bar" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FB1BE"/>
+      <stop offset="0.5" stop-color="#00022B"/>
+      <stop offset="1" stop-color="#D53302"/>
+    </linearGradient>
+  </rect>
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FB1BE"/>
+      <stop offset="0.5" stop-color="#00022B"/>
+      <stop offset="1" stop-color="#D53302"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="490" width="800" height="10" fill="url(#bar)"/>
+</svg>
