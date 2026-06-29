@@ -4,10 +4,13 @@ import { ArrowUpRight } from "lucide-react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import CustomCursor from "../components/customCursor";
+import { designathons } from "../data/designathons";
 import "../styles/hackathon.css";
 
 
-export default function hackathon() {
+export default function Hackathon() {
+  const designathon = designathons[0];
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -17,7 +20,7 @@ export default function hackathon() {
 
   return (
     <div className="page-container-hackathon">
-      <title>Designation - Queen's UX Club</title>
+      <title>Designathon - Queen&apos;s UX Club</title>
           <CustomCursor />
 
       {/* Hero Section */}
@@ -29,8 +32,10 @@ export default function hackathon() {
               <h1 className="hero-title-hk">
                 Designathon 2025
               </h1>
-              <p className="hero-subtitle-hk">Novmber 15th - 23rd 2025 | In Person & Online | Kingston, ON</p>
-              <a>Sign up closed</a>
+              <p className="hero-subtitle-hk">November 15th - 22nd 2025 | Online</p>
+              <a href={designathon.devpostUrl} target="_blank" rel="noreferrer">
+                View the 2025 Designathon on Devpost
+              </a>
             </div>
 
             <div className="hero-image-container-hk">
@@ -67,11 +72,61 @@ export default function hackathon() {
         </div>
       </section>
 
+      {/* Annual Archive Section */}
+      <section className="content-section-hackathon designathon-archive" data-aos="fade-up">
+        <div className="container-hackathon">
+          <div className="section-content-hk">
+            <p className="archive-eyebrow">Annual archive · {designathon.year}</p>
+            <h2 className="section-title-hk archive-title">Theme: {designathon.theme}</h2>
+            <p className="section-text-hk">{designathon.summary}</p>
+
+            <div className="archive-stats">
+              <span>{designathon.participantCount} participants</span>
+              <span>{designathon.prizeTotal} in prizes</span>
+              <span>{designathon.projects.length + designathon.winners.length} projects</span>
+            </div>
+
+            <h3 className="archive-heading">2025 winners</h3>
+            <div className="archive-grid winners-grid">
+              {designathon.winners.map((winner) => (
+                <a href={winner.url} target="_blank" rel="noreferrer" className="archive-card winner-card-hk" key={winner.title}>
+                  <small>{winner.place}</small>
+                  <h4>{winner.title}</h4>
+                  <p>{winner.description}</p>
+                  <span>{winner.team.join(" · ")}</span>
+                </a>
+              ))}
+            </div>
+
+            <div className="archive-heading-row">
+              <h3 className="archive-heading">More projects</h3>
+              <a href={designathon.galleryUrl} target="_blank" rel="noreferrer">
+                See other projects at the Devpost <ArrowUpRight size={18} />
+              </a>
+            </div>
+
+            <h3 className="archive-heading">Meet the mentors</h3>
+            <p className="section-text-hk">
+              UX researchers, product designers, and industry professionals supported
+              participants with questions and real-world advice.
+            </p>
+            <div className="mentor-list-hk">
+              {designathon.mentors.map((mentor) => (
+                <article key={mentor.name}>
+                  <strong>{mentor.name}</strong>
+                  <span>{mentor.role}</span>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sponsor Section */}
       <section className="content-section-hackathon" data-aos="fade-up">
         <div className="container-hackathon">
           <div className="section-content-hk h-100">
-            <h2 className="section-title-hk">Sponsor the launch of design packed weekend</h2>
+            <h2 className="section-title-hk">Sponsor the launch of a design-packed weekend</h2>
 
             <div className="section-text-hk">
               <p className="mb-20">
