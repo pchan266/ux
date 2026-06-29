@@ -4,6 +4,7 @@ import { useState } from "react"
 export default function EventCard ({ type="upcoming", eventData }) {
 
     const [isExpanded, setIsExpanded] = useState(false)
+    const eventImage = eventData?.imageGallery?.[0] ?? "/event-placeholder.svg"
 
     // Automatically detect if event is in the past
     const isPastEvent = new Date(eventData?.date) < new Date()
@@ -61,7 +62,7 @@ export default function EventCard ({ type="upcoming", eventData }) {
                             Sign up
                         </a>
                     </div>
-                    <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="event-image" alt="Event" draggable={false} />
+                    <img src={eventImage.startsWith("/") ? eventImage : `../${eventImage}`} className="event-image" alt="Event" draggable={false} />
                     
             </div>
         )
@@ -90,7 +91,7 @@ export default function EventCard ({ type="upcoming", eventData }) {
                     )}
                 </div>
             
-                <img src={`../${eventData?.imageGallery?.[0] || "Group 10.svg"}`} className="event-image mt-4 mb-4" alt="Event" draggable={false} />
+                <img src={eventImage.startsWith("/") ? eventImage : `../${eventImage}`} className="event-image mt-4 mb-4" alt="Event" draggable={false} />
             </div>
             
         </div>

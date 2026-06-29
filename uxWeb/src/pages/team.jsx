@@ -9,7 +9,7 @@ import "../styles/team.css";
 
 
 function Team() {
-    const [selected, setSelected] = useState("cofounders");
+    const [selected, setSelected] = useState("cochairs");
     const [execCount, setExecCount] = useState(0)
     
     useEffect(() => {

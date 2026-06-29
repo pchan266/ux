@@ -20,8 +20,7 @@
       "date": "2024-09-22",
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
-      "signupLink": "https://forms.gle/example1",
-      "imageGallery": ["events/week3event.jpg"]
+      "signupLink": "https://forms.gle/example1"
     },
     {
       "title": "Workshops",
@@ -31,8 +30,7 @@
       "date": "2024-10-06",
       "time": "6:00 PM - 8:00 PM",
       "location": "Goodes Hall, Rm 302",
-      "signupLink": "https://forms.gle/example2",
-      "imageGallery": ["events/2025-10-06.png"]
+      "signupLink": "https://forms.gle/example2"
     },
     {
       "title": "Events",
@@ -42,19 +40,37 @@
       "date": "2024-10-05",
       "time": "6:00 PM - 8:00 PM",
       "location": "Goodes Hall, Rm 302",
-      "signupLink": "https://forms.gle/example3",
-      "imageGallery": ["events/2025-10-30.png"]
+      "signupLink": "https://forms.gle/example3"
     },
     {
       "title": "Workshops",
       "subtitle": "Let’s Talk Interviews (Part 1)",
       "descriptionPresent": "Learn how to conduct effective interviews. We’ll discuss different interview types, how to prepare, and best practices for engaging with participants. You’ll also have the opportunity to run a short, informal interview on a topic of your choice.",
       "descriptionPast": "This session focused on how to conduct effective interviews. We discussed different interview types, how to prepare, and best practices for engaging with participants. Attendees also had the opportunity to run a short, informal interview on a topic of their choice.",
-      "date": "2024-09-29",
+      "date": "2025-09-29",
       "time": "6:00 PM - 8:00 PM",
       "location": "Goodes Hall, Rm 302",
       "signupLink": "https://forms.gle/example4",
-      "imageGallery": ["events/2025-09-29.png"]
+      "imageGallery": [
+        "events/2026/interviews-1.png",
+        "events/2026/interviews-2.png"
+      ]
+    },
+    {
+      "title": "Workshops",
+      "subtitle": "Resume & Portfolio Component Building",
+      "descriptionPresent": "Build stronger resume and portfolio components for UI/UX applications through practical examples, feedback, and hands-on work.",
+      "descriptionPast": "Students explored what makes a strong UI/UX resume and portfolio, then built and refined components through hands-on practice and feedback.",
+      "date": "2026-03-10",
+      "time": "6:00 PM - 8:00 PM",
+      "location": "Goodwin Hall, CASLab",
+      "signupLink": "",
+      "imageGallery": [
+        "events/2026/resume-portfolio-1.jpg",
+        "events/2026/resume-portfolio-2.jpg",
+        "events/2026/resume-portfolio-3.jpg",
+        "events/2026/resume-portfolio-4.jpg"
+      ]
     },
     {
       "title": "Workshops",
@@ -64,8 +80,7 @@
       "date": "2024-10-27",
       "time": "6:00 PM - 8:00 PM",
       "location": "Goodes Hall, Rm 302",
-      "signupLink": "https://forms.gle/example7",
-      "imageGallery": ["events/2025-10-27.png"]
+      "signupLink": "https://forms.gle/example7"
     }
   ]
 }
