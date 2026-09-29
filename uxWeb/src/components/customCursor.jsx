@@ -20,7 +20,7 @@ export default function CustomCursor() {
         top: `${pos.y}px`,
       }}
     >
-      <img src="../../cursor.svg" alt="cursor" draggable="false" />
+      <img src="/cursor.svg" alt="cursor" draggable="false" />
     </div>
   );
 }

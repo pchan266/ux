@@ -8,7 +8,7 @@ import { Outlet } from 'react-router-dom';
 export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col">
-      <link rel="icon" href="ux.png" />
+      <link rel="icon" href="/ux.png" />
       <ScrollToTop />
       <Navbar />
       <MobileNavbar />

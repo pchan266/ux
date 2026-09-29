@@ -1,0 +1,452 @@
+/* index.css styles bare h1/h2 globally (gradient fill, 176px top margin), so
+   everything here is class-scoped and the headings are reset explicitly. */
+
+.admin-shell {
+  min-height: 100vh;
+  background-color: #fffcf5;
+  font-family: "BR Firma", sans-serif;
+  color: #00022b;
+}
+
+/* customCursor.css sets `cursor: none !important` on html/body/button/a/input/
+   textarea globally, but admin doesn't render <CustomCursor />, which would
+   leave no pointer at all. Restore the real one here. */
+.admin-shell,
+.admin-shell input,
+.admin-shell textarea {
+  cursor: auto !important;
+}
+
+.admin-shell a,
+.admin-shell button:not(:disabled),
+.admin-shell input[type="checkbox"],
+.admin-shell label[for],
+.admin-shell .admin-dropzone {
+  cursor: pointer !important;
+}
+
+.admin-shell button:disabled {
+  cursor: not-allowed !important;
+}
+
+.admin-shell h1,
+.admin-shell h2,
+.admin-shell h3 {
+  margin: 0;
+  width: auto;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  text-align: left;
+  color: #00022b;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid rgba(0, 2, 43, 0.12);
+  background-color: #ffffff;
+}
+
+.admin-header h1 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.admin-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.admin-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.admin-page-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-page-head h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.admin-muted {
+  color: rgba(0, 2, 43, 0.6);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/* Buttons */
+.admin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.admin-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.admin-btn--primary {
+  background-color: #00022b;
+  color: #ffffff;
+}
+
+.admin-btn--primary:not(:disabled):hover {
+  background-color: #1b1f4d;
+}
+
+.admin-btn--secondary {
+  background-color: #ffffff;
+  border-color: rgba(0, 2, 43, 0.2);
+  color: #00022b;
+}
+
+.admin-btn--secondary:not(:disabled):hover {
+  border-color: #00022b;
+}
+
+.admin-btn--danger {
+  background-color: #ffffff;
+  border-color: rgba(213, 51, 2, 0.35);
+  color: #d53302;
+}
+
+.admin-btn--danger:not(:disabled):hover {
+  background-color: #d53302;
+  color: #ffffff;
+  border-color: #d53302;
+}
+
+.admin-btn--small {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+/* Feedback */
+.admin-alert {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.admin-alert--error {
+  background-color: rgba(213, 51, 2, 0.08);
+  border: 1px solid rgba(213, 51, 2, 0.3);
+  color: #a3280c;
+}
+
+.admin-alert--success {
+  background-color: rgba(143, 177, 190, 0.18);
+  border: 1px solid rgba(143, 177, 190, 0.5);
+  color: #00022b;
+}
+
+.admin-empty {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: rgba(0, 2, 43, 0.6);
+  background-color: #ffffff;
+  border: 1px dashed rgba(0, 2, 43, 0.2);
+  border-radius: 14px;
+}
+
+/* Event list */
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.admin-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 2, 43, 0.1);
+  border-radius: 14px;
+  flex-wrap: wrap;
+}
+
+.admin-row-main {
+  flex: 1 1 22rem;
+  min-width: 0;
+}
+
+.admin-row-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.admin-row-title span {
+  color: #d53302;
+}
+
+.admin-row-meta {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: rgba(0, 2, 43, 0.6);
+}
+
+.admin-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-badge--live {
+  background-color: rgba(143, 177, 190, 0.28);
+  color: #00022b;
+}
+
+.admin-badge--hidden {
+  background-color: rgba(0, 2, 43, 0.08);
+  color: rgba(0, 2, 43, 0.6);
+}
+
+/* Forms */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 2, 43, 0.1);
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.admin-field label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.admin-field input[type="text"],
+.admin-field input[type="date"],
+.admin-field input[type="url"],
+.admin-field input[type="password"],
+.admin-field textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(0, 2, 43, 0.2);
+  border-radius: 10px;
+  background-color: #fffcf5;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #00022b;
+}
+
+.admin-field input:focus,
+.admin-field textarea:focus {
+  outline: 2px solid rgba(143, 177, 190, 0.8);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.admin-field textarea {
+  min-height: 7rem;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.admin-field-hint {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(0, 2, 43, 0.55);
+}
+
+.admin-field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.25rem;
+}
+
+.admin-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.admin-checkbox input {
+  margin-top: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  accent-color: #00022b;
+}
+
+.admin-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(0, 2, 43, 0.1);
+  padding-top: 1.25rem;
+}
+
+/* Image gallery editor */
+.admin-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.75rem;
+}
+
+.admin-gallery-item {
+  position: relative;
+  border: 1px solid rgba(0, 2, 43, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fffcf5;
+  aspect-ratio: 4 / 3;
+}
+
+.admin-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.admin-gallery-remove {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: rgba(0, 2, 43, 0.75);
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.admin-gallery-remove:hover {
+  background-color: #d53302;
+}
+
+.admin-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1.5rem;
+  border: 1px dashed rgba(0, 2, 43, 0.25);
+  border-radius: 12px;
+  background-color: #fffcf5;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: rgba(0, 2, 43, 0.6);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.admin-dropzone--active {
+  border-color: #00022b;
+  background-color: rgba(143, 177, 190, 0.12);
+}
+
+.admin-dropzone input {
+  display: none;
+}
+
+/* Login */
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 24rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 2, 43, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.admin-login-card h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.admin-login-card .admin-muted {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.admin-login-card .admin-btn {
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.admin-loading {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: rgba(0, 2, 43, 0.6);
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .admin-header,
+  .admin-main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .admin-form {
+    padding: 1.25rem;
+  }
+}

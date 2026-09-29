@@ -91,7 +91,7 @@ function Team() {
             {name: "Nilaya Rimal", role: "Executive", image: "/headshots/events/Nilaya_Rimal.jpeg"},
         ],
         designathon: [
-            {name: "Rounika Saxena", role: "Director", image: "/headshots/designathon/rounika_saxena.jpeg"},
+            {name: "Rounika Saxena", role: "Director", image: "/headshots/hackathon/rounika_saxena.jpeg"},
             {name: "Darryl Brown", role: "Executive", image: "/headshots/hackathon/Darryl_Brown.jpeg"},
             {name: "Gopika Batra", role: "Executive", image: "/headshots/hackathon/Gopika_Batra.jpeg"},
             {name: "Henrique Sponchiado", role: "Executive", image: "/headshots/hackathon/Henrique_Silverio_Sponchiado.jpg"},

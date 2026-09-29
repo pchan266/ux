@@ -4,7 +4,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container-footer">
                 <div className="footer-content">
-                    <img src="../Logo (2).svg" alt="UX" className="ux-logo-footer" />
+                    <img src="/Logo (2).svg" alt="UX" className="ux-logo-footer" />
                     <div className="social-links">
                         <a href="mailto:queensuxclub@gmail.com" className="pt-1">
                             <svg width="37" height="29" viewBox="0 0 37 29" fill="none" xmlns="http://www.w3.org/2000/svg">
