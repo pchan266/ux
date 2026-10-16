@@ -1,3 +1,4 @@
+import { deleteBlobs } from "../../_lib/blob.js";
 import { query } from "../../_lib/db.js";
 import {
   SELECT_COLUMNS,
@@ -51,6 +52,17 @@ async function handler(req, res) {
       return res.status(400).json({ error: "No updatable fields provided" });
     }
 
+    // Capture the current gallery so images dropped by this edit can be
+    // removed from Blob storage once the update succeeds.
+    let previousGallery = [];
+    if (values.imageGallery !== undefined) {
+      const { rows: existing } = await query(
+        "SELECT image_gallery FROM events WHERE id = $1",
+        [id]
+      );
+      previousGallery = existing[0]?.image_gallery ?? [];
+    }
+
     const assignments = columns.map((column, i) => `${column} = $${i + 1}`);
     assignments.push("updated_at = now()");
 
@@ -65,14 +77,24 @@ async function handler(req, res) {
     if (rows.length === 0) {
       return res.status(404).json({ error: "Event not found" });
     }
+
+    if (values.imageGallery !== undefined) {
+      const kept = new Set(values.imageGallery);
+      await deleteBlobs(previousGallery.filter((url) => !kept.has(url)));
+    }
+
     return res.status(200).json({ event: rowToEvent(rows[0]) });
   }
 
   if (req.method === "DELETE") {
-    const { rowCount } = await query("DELETE FROM events WHERE id = $1", [id]);
-    if (rowCount === 0) {
+    const { rows } = await query(
+      "DELETE FROM events WHERE id = $1 RETURNING image_gallery",
+      [id]
+    );
+    if (rows.length === 0) {
       return res.status(404).json({ error: "Event not found" });
     }
+    await deleteBlobs(rows[0].image_gallery ?? []);
     return res.status(200).json({ ok: true });
   }
 
