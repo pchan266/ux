@@ -42,7 +42,7 @@ export default function Sponsor() {
                             <h3 className="benefit-title">Boost Brand Visibility</h3>
                             <p className="benefit-description">You will have access to the brightest minds in the Queen's UX community, and will capitalize on their talent early on.</p>
 
-                             <img src="creativity.svg" alt="" />
+                             <img src="/creativity.svg" alt="" />
                         </div>
 
                         <div className="benefit-card impact">
@@ -50,7 +50,7 @@ export default function Sponsor() {
                             <h3 className="benefit-title">Make an Impact</h3>
                             <p className="benefit-description">Influencing the Queen's UX community by providing UX opportunities to them.</p>
 
-                            <img src="empathy.svg" alt="" />
+                            <img src="/empathy.svg" alt="" />
                         </div>
 
                         <div className="benefit-card connections">
@@ -58,7 +58,7 @@ export default function Sponsor() {
                             <h3 className="benefit-title">Build Connections</h3>
                             <p className="benefit-description">We're on track for 2,500 followers by 2027, with 100+ event and 200+ designathon attendees this past year alone.</p>
 
-                            <img src="curiosity.svg" alt="" />
+                            <img src="/curiosity.svg" alt="" />
                         </div>
                     </div>
                 </div>

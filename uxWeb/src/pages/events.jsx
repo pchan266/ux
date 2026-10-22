@@ -4,7 +4,6 @@ import { useEffect, useState, useMemo } from "react";
 import MobileEventCarousel from "../components/EventCarouselMobile";
 import UpcomingEventCarousel from "../components/EventCarouselSingle";
 import CustomCursor from "../components/customCursor";
-import eventsData from "../data/events.json";
 import "../styles/events.css";
 import Carousel from "../components/PrevEventCarousel";
 import EventCard from "../components/EventCard";
@@ -17,12 +16,11 @@ export default function Events() {
   const [previous, setPrevious] = useState([]);
 
   // Parse events and categorize by date
-  const parseEvents = () => {
+  const parseEvents = (data) => {
     const today = new Date();
     const upcomingArr = [];
     const previousArr = [];
 
-    const data = eventsData.events;
     data.forEach((event) => {
       const eventDate = new Date(event.date);
       if (eventDate >= today) {
@@ -42,8 +40,24 @@ export default function Events() {
   };
 
   useEffect(() => {
-    parseEvents();
-  }, [selected]);
+    let active = true;
+
+    fetch("/api/events")
+      .then((response) => {
+        if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        if (active) parseEvents(data.events ?? []);
+      })
+      .catch((error) => {
+        console.error("Could not load events", error);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, []);
 
   useEffect(() => {
     AOS.init({

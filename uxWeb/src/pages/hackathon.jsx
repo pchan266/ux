@@ -52,7 +52,7 @@ export default function Hackathon() {
 
             <div className="hero-image-container-hk">
               <img
-                src="../Group 7.svg"
+                src="/Group 7.svg"
                 alt="Decorative geometric shapes"
                 className="hero-image-hk"
               />

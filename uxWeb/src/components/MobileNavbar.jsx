@@ -24,8 +24,8 @@ export default function MobileNavbar() {
                 <div className="mobile-logo">
                     <Link to="/" className="mobile-logo-link">
                         <picture>
-                            <source srcSet="../Logo.nofilter.svg" media="(max-width: 768px)" />
-                            <img src='../Logo.svg' alt="UX" className="mobile-ux-logo" />
+                            <source srcSet="/Logo.nofilter.svg" media="(max-width: 768px)" />
+                            <img src='/Logo.svg' alt="UX" className="mobile-ux-logo" />
                         </picture>
                     </Link>
                 </div>
@@ -48,8 +48,8 @@ export default function MobileNavbar() {
                         <div className="mobile-menu-logo">
                             <Link to="/" className="mobile-logo-link" onClick={closeMenu}>
                                 <picture>
-                                    <source srcSet="../Logo.nofilter.svg" media="(max-width: 768px)" />
-                                    <img src='../Logo.svg' alt="UX" className="mobile-ux-logo" />
+                                    <source srcSet="/Logo.nofilter.svg" media="(max-width: 768px)" />
+                                    <img src='/Logo.svg' alt="UX" className="mobile-ux-logo" />
                                 </picture>
                             </Link>
                         </div>

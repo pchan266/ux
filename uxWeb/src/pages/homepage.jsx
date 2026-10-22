@@ -4,10 +4,7 @@ import { ArrowUpRight } from "lucide-react"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import VanillaTilt from 'vanilla-tilt'
-import MobileEventCarousel from "../components/EventCarouselMobile"
-import EventCarousel from "../components/EventCarouselSingle"
 import CustomCursor from "../components/customCursor"
-import eventsData from "../data/events.json"
 import "../styles/footer.css"
 import "../styles/header.css"
 import "../styles/homepage.css"
@@ -17,7 +14,6 @@ export default function homepage() {
   const [showEmpathyText, setShowEmpathyText] = useState(false);
   const [showCuriosityText, setShowCuriosityText] = useState(false);
   const [showInclusivityText, setShowInclusivityText] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   //UseEffect hook for AOS animation (slide in)
   useEffect(() => {
@@ -25,18 +21,6 @@ export default function homepage() {
         duration: 1000,
         once: true,
       })
-      
-
-      const checkMobile = () => {
-          if (typeof window !== "undefined") {
-          const width = window.innerWidth;
-          setIsMobile(width <= 1024); 
-          }
-      };
-
-      checkMobile();
-      window.addEventListener("resize", checkMobile);
-      return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   //UseEffect hook for VanillaTilt animation
@@ -131,7 +115,7 @@ export default function homepage() {
               <div className="card-flipper">
                 <div className="card-front">
                   <h3 className="value-title">Creativity</h3>
-                  <img src="creativity.svg" alt="" />
+                  <img src="/creativity.svg" alt="" />
                 </div>
                 <div className="card-back">
                   <h3 className="value-title">Creativity</h3>
@@ -150,7 +134,7 @@ export default function homepage() {
               <div className="card-flipper">
                 <div className="card-front">
                   <h3 className="value-title">Empathy</h3>
-                  <img src="empathy.svg" alt="" />
+                  <img src="/empathy.svg" alt="" />
                 </div>
                 <div className="card-back">
                   <h3 className="value-title">Empathy</h3>
@@ -169,7 +153,7 @@ export default function homepage() {
               <div className="card-flipper">
                 <div className="card-front">
                   <h3 className="value-title">Curiosity</h3>
-                  <img src="curiosity.svg" alt="" />
+                  <img src="/curiosity.svg" alt="" />
                 </div>
                 <div className="card-back">
                   <h3 className="value-title">Curiosity</h3>
@@ -188,7 +172,7 @@ export default function homepage() {
               <div className="card-flipper">
                 <div className="card-front">
                   <h3 className="value-title">Inclusivity</h3>
-                  <img src="inclusivity.svg" alt="" />
+                  <img src="/inclusivity.svg" alt="" />
                 </div>
                 <div className="card-back">
                   <h3 className="value-title">Inclusivity</h3>
@@ -219,17 +203,6 @@ export default function homepage() {
           </h2>
           </div>
 
-          {/* Temporarily hidden - show "Coming Soon" instead */}
-          {false && (isMobile ? (
-            <MobileEventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
-          ) : (
-            <div className="events-carousel-wrapper-homepage">
-              <div className="events-carousel-hmpg-inner">
-                <EventCarousel cardNum={eventsData.upcoming.length} events={eventsData.upcoming} />
-              </div>
-            </div>
-          ))}
-          
           {/* Coming Soon message */}
           <div className="py-20 flex flex-col items-center justify-center">
             <div className="text-center">
@@ -249,8 +222,8 @@ export default function homepage() {
 
       {/* stars */}
       <div className="stars">
-        <img src="../hm_tr.svg" className="hm_tr" alt="" />
-        <img src="../hm_bl.svg" className="hm_bl" alt="" />
+        <img src="/hm_tr.svg" className="hm_tr" alt="" />
+        <img src="/hm_bl.svg" className="hm_bl" alt="" />
       </div>
 
     </div>
