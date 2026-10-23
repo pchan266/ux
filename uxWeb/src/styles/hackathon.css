@@ -713,3 +713,33 @@
     font-size: 20px;
   }
 }
+
+/* Featured 2026 Designathon */
+.designathon-2026 {
+  background: radial-gradient(ellipse at 88% 18%, rgba(252,197,96,.18), transparent 25%),
+              radial-gradient(ellipse at 4% 88%, rgba(143,177,190,.2), transparent 30%),
+              #00022b;
+  color: #fffcf5;
+  padding: clamp(4rem, 7vw, 7rem) 1.5rem;
+  overflow: hidden;
+}
+.designathon-2026-inner { max-width: 1150px; margin: 0 auto; }
+.designathon-2026-eyebrow { color: #a0cbad; font-weight: 700; font-size: .9rem; letter-spacing: .1em; }
+.designathon-2026 h1 { font-size: clamp(3.1rem, 7.6vw, 6.5rem); line-height: 1.05; font-weight: 700; letter-spacing: -.045em; margin: 1rem 0; }
+.designathon-2026 h1 span { color: #fcc560; }
+.designathon-2026-dates { color: #fcc560; font-size: clamp(1.4rem, 2.7vw, 2rem); font-weight: 600; }
+.designathon-2026-description { font-size: 1.15rem; line-height: 1.7; max-width: 700px; margin-top: 1.5rem; color: #e1e8ee; }
+.designathon-2026-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.2rem; margin-top: 2rem; }
+.designathon-2026-actions span { color: #b9cad2; font-size: .95rem; }
+.designathon-2026-cta { display: inline-flex; align-items: center; gap: .8rem; padding: 1rem 1.5rem; border-radius: 100px; background: #fcc560; color: #00022b; font-weight: 700; text-decoration: none; transition: background .2s, transform .2s; }
+.designathon-2026-cta:hover, .designathon-2026-cta:focus-visible { background: #a0cbad; transform: translateY(-2px); }
+.designathon-2026-timeline { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid #405071; }
+.designathon-2026-timeline h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 700; margin-bottom: 1.8rem; }
+.designathon-2026-timeline-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.designathon-2026-milestone { border: 1px solid #344266; background: rgba(255,255,255,.05); border-radius: 18px; padding: 1.4rem; }
+.designathon-2026-milestone h3 { font-weight: 700; color: #fcc560; font-size: 1.25rem; margin-bottom: .8rem; }
+.designathon-2026-milestone ul { list-style: disc; margin: 0; padding-left: 1.2rem; line-height: 1.65; color: #e1e8ee; }
+.designathon-2026-milestone li + li { margin-top: .4rem; }
+.designathon-2026-more { margin-top: 1.8rem; color: #a0cbad; font-size: .95rem; }
+@media (max-width: 800px) { .designathon-2026-timeline-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 540px) { .designathon-2026-timeline-grid { grid-template-columns: 1fr; } .designathon-2026 { padding: 4rem 1.1rem; } .designathon-2026-actions { align-items: flex-start; flex-direction: column; } }
