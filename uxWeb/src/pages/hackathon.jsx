@@ -8,6 +8,19 @@ import { designathons } from "../data/designathons";
 import "../styles/events.css";
 import "../styles/hackathon.css";
 
+const designathon2026 = {
+  year: 2026,
+  dates: "November 6–8, 2026",
+  registrationUrl: "https://forms.gle/2D7B5cSdXZahVs8x8",
+  timeline: [
+    { date: "October 21–30", items: ["Registration open", "Create teams of up to 4"] },
+    { date: "November 4", items: ["Deadline to sign up for mentorship sessions"] },
+    { date: "November 6", items: ["6 PM — Opening ceremony"] },
+    { date: "November 7", items: ["9 AM–5 PM — Virtual mentorship sessions", "Full day — Work on projects"] },
+    { date: "November 8", items: ["6 PM — Closing ceremony"] },
+  ],
+};
+
 const AVATAR_COLOURS = ["#A3280C", "#657F95", "#D53302", "#8FB1BE", "#FCC560", "#A0CBAD"];
 
 function getInitials(name) {
@@ -21,7 +34,7 @@ function getInitials(name) {
 }
 
 export default function Hackathon() {
-  const designathon = designathons[0];
+  const designathon = designathons.find((event) => event.year === 2025);
 
   useEffect(() => {
     AOS.init({
@@ -35,28 +48,36 @@ export default function Hackathon() {
       <title>Designathon - Queen&apos;s UX Club</title>
           <CustomCursor />
 
-      {/* Hero Section */}
-      <section className="hero-section-hackathon" data-aos="fade-right">
-        <div className="container-hackathon">
-          <div className="hero-grid-hk">
-
-            <div className="hero-content-hk">
-              <h1 className="hero-title-hk">
-                Designathon {designathon.year}
-              </h1>
-              <p className="hero-subtitle-hk">{designathon.dates} | {designathon.format}</p>
-              <a href={designathon.devpostUrl} target="_blank" rel="noreferrer">
-                View the {designathon.year} Designathon on Devpost
+      {/* Featured Designathon 2026: registration and timeline */}
+      <section className="designathon-2026" aria-labelledby="designathon-2026-title">
+        <div className="designathon-2026-inner">
+          <div className="designathon-2026-intro">
+            <p className="designathon-2026-eyebrow">QUEEN'S UX CLUB × FIGMA AT QUEEN'S</p>
+            <h1 id="designathon-2026-title">Design-a-thon <span>2026</span></h1>
+            <p className="designathon-2026-dates">November 6–8, 2026</p>
+            <p className="designathon-2026-description">
+              Spend a weekend designing and prototyping creative digital products.
+              Get mentorship from UX professionals, build a project for your portfolio,
+              and enjoy prizes and food!
+            </p>
+            <div className="designathon-2026-actions">
+              <a className="designathon-2026-cta" href={designathon2026.registrationUrl} target="_blank" rel="noopener noreferrer">
+                Sign up now <ArrowUpRight size={21} aria-hidden="true" />
               </a>
+              <span>Registration: October 21–30 · Teams of up to 4</span>
             </div>
-
-            <div className="hero-image-container-hk">
-              <img
-                src="/Group 7.svg"
-                alt="Decorative geometric shapes"
-                className="hero-image-hk"
-              />
+          </div>
+          <div className="designathon-2026-timeline">
+            <h2>Event timeline</h2>
+            <div className="designathon-2026-timeline-grid">
+              {designathon2026.timeline.map(({ date, items }) => (
+                <div className="designathon-2026-milestone" key={date}>
+                  <h3>{date}</h3>
+                  <ul>{items.map((item) => <li key={item}>{item}</li>)}</ul>
+                </div>
+              ))}
             </div>
+            <p className="designathon-2026-more">More details, projects, and results will be added after the event.</p>
           </div>
         </div>
       </section>
@@ -84,7 +105,7 @@ export default function Hackathon() {
         </div>
       </section>
 
-      {/* Annual Archive Section */}
+      {/* 2025 archive: retained unchanged until 2026 results are ready */}
       <section className="content-section-hackathon designathon-archive" data-aos="fade-up">
         <div className="container-hackathon">
           <div className="section-content-hk">
